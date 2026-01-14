@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="61A95F5F-5664-4107-AFB2-DE9DDFA02339">
+      <SHORT-NAME>PortInterfaces</SHORT-NAME>
+      <ELEMENTS>
+        <SERVICE-SW-COMPONENT-TYPE UUID="08335809-4F1C-4265-B9DD-6D32596F433D">
+          <SHORT-NAME>Modecontrol</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="CF6F71E3-F2FE-492F-9550-5D604B611E50">
+              <SHORT-NAME>MODEOUT</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/MODEOUT/MODE</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/MODEOUT</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="07336DC3-BA3F-47BB-88EF-D70E078A8B7B">
+              <SHORT-NAME>Modecontrol_InternalBehavior</SHORT-NAME>
+              <PORT-API-OPTIONS>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                  <ERROR-HANDLING>NO-TRANSFORMER-ERROR-HANDLING</ERROR-HANDLING>
+                  <INDIRECT-API>true</INDIRECT-API>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/PortInterfaces/Modecontrol/MODEOUT</PORT-REF>
+                </PORT-API-OPTION>
+              </PORT-API-OPTIONS>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </SERVICE-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="5DA978F9-D640-47ED-A14B-938BB1D23125">
+          <SHORT-NAME>Modecontrol_Implementation</SHORT-NAME>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/PortInterfaces/Modecontrol/Modecontrol_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

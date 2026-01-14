@@ -1,0 +1,5 @@
+#E:\TC275_demo\project\TC275\00_ASW\lock_autosar_rtw\stub\Rte_lock.h
+#this file contains the list of RTE methods that the profiling must filter out
+-Rte_Read_lock_control_lock_cmd
+-Rte_Write_lock_status_lock_status
+-Rte_Invalidate_lock_status_lock_status

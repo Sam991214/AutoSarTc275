@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="2c3a6f0b-01db-4741-ac0c-2bd959bf79ce">
+      <SHORT-NAME>COM</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="62dd70d5-ecb2-4a28-9162-7c53a8167973">
+          <SHORT-NAME>VECTOR</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="e1930ba1-cf79-4e77-94db-8efeb72f96f3">
+              <SHORT-NAME>CFG</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="45e3106d-d7ae-4b77-9c7b-df50e24286ef">
+                  <SHORT-NAME>WORKFLOW</SHORT-NAME>
+                  <AR-PACKAGES>
+                    <AR-PACKAGE UUID="776030ed-fcda-4357-8376-2913442bd35f">
+                      <SHORT-NAME>SYSDESC</SHORT-NAME>
+                      <AR-PACKAGES>
+                        <AR-PACKAGE UUID="f246575f-f0fe-4331-82e9-fa01754890e6">
+                          <SHORT-NAME>SYNC</SHORT-NAME>
+                          <ELEMENTS>
+                            <SYSTEM UUID="99bdba4e-3e6b-457d-9e05-0cf1d808aa34">
+                              <SHORT-NAME>SYSTEM</SHORT-NAME>
+                              <CATEGORY>ECU_EXTRACT</CATEGORY>
+                              <FIBEX-ELEMENTS>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="NM-CONFIG">/NM/NmConfig</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-TP-CONFIG">/TP/CAN00_CAN</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-CLUSTER">/Cluster/CAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/ECU/MyECU</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/IPDUGroup/MyECU_oCAN00_Rx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/IPDUGroup/MyECU_oCAN00_Tx</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/LOCK_Control_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/LOCK_status_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_diag_Request_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_diag_RequestGlobal_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_diag_Response_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_nm_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_nm_RearECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_Receive2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_Transmit_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_Transmit2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/Rear_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/LOCK_Control_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/LOCK_status_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_Receive2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_Transmit_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/msg_Transmit2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/Rear_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="DCM-I-PDU">/PDU/msg_diag_Request_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="DCM-I-PDU">/PDU/msg_diag_RequestGlobal_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="DCM-I-PDU">/PDU/msg_diag_Response_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="NM-PDU">/PDU/msg_nm_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="NM-PDU">/PDU/msg_nm_RearECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="N-PDU">/PDU/msg_diag_Request_MyECU_Tp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="N-PDU">/PDU/msg_diag_RequestGlobal_Tp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="N-PDU">/PDU/msg_diag_Response_MyECU_Tp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/lock_cmd_oLOCK_Control_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/lock_status_oLOCK_status_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/Rear_LeftWindow_oRear_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/Rear_RighttWindow_oRear_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_FrongtIntorLight_omsg_Transmit2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_LampCnt_omsg_MyECU_Lamp_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_RearInteriorLight_omsg_Transmit_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_RearLeftWindowPosition_omsg_Receive2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_RearRightWindowPosition_omsg_Receive2_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_State_RearInteriorLight_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_State_RearLeftDoor_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/sig_State_RearRightDoor_omsg_Receive_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/msg_nm_TX_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                                  <FIBEX-ELEMENT-REF DEST="USER-DEFINED-PDU">/PDU/msg_nm_TX_MyECU_oCAN00</FIBEX-ELEMENT-REF>
+                                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                              </FIBEX-ELEMENTS>
+                              <MAPPINGS>
+                                <SYSTEM-MAPPING UUID="5431d1dc-c91b-4d22-befb-c54096523c47">
+                                  <SHORT-NAME>MAPPINGS</SHORT-NAME>
+                                  <DATA-MAPPINGS>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/lock</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/lock/lock_control</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/lock_control/lock_cmd</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/lock_cmd</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                      <DATA-ELEMENT-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/lock</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/lock/lock_status</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/lock_status/lock_status</TARGET-DATA-PROTOTYPE-REF>
+                                      </DATA-ELEMENT-IREF>
+                                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/lock_status</SYSTEM-SIGNAL-REF>
+                                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                                  </DATA-MAPPINGS>
+                                </SYSTEM-MAPPING>
+                              </MAPPINGS>
+                              <ROOT-SOFTWARE-COMPOSITIONS>
+                                <ROOT-SW-COMPOSITION-PROTOTYPE UUID="472cd6b0-dae9-44fa-959a-391611411746">
+                                  <SHORT-NAME>COMPOSITIONTYPE</SHORT-NAME>
+                                  <FLAT-MAP-REF DEST="FLAT-MAP">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</FLAT-MAP-REF>
+                                  <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SOFTWARE-COMPOSITION-TREF>
+                                </ROOT-SW-COMPOSITION-PROTOTYPE>
+                              </ROOT-SOFTWARE-COMPOSITIONS>
+                            </SYSTEM>
+                            <COMPOSITION-SW-COMPONENT-TYPE UUID="d7d4dd15-b947-4a61-83ab-dd49a38d814d">
+                              <SHORT-NAME>COMPOSITIONTYPE</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                                <ANNOTATION>
+                                  <LABEL>
+                                    <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                  </LABEL>
+                                  <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                              <COMPONENTS>
+                                <SW-COMPONENT-PROTOTYPE UUID="c3cd986d-2daf-4af5-b4ba-a14742c2d05e">
+                                  <SHORT-NAME>Det</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Det_swc/ComponentTypes/Det</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="18fa748c-4f5d-48e0-9586-de09c5d1e0a7">
+                                  <SHORT-NAME>EcuM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="3904ca06-7d01-44c7-bc10-7efa7df1bf9f">
+                                  <SHORT-NAME>Os_OsCore0_swc</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="178cce66-fe8f-4437-b7b5-5b2c5f9bf994">
+                                  <SHORT-NAME>Os_OsCore2_swc</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore2_swc</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="a5a953b6-3e37-45fe-8004-363422df5601">
+                                  <SHORT-NAME>Os_OsCore1_swc</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="97d5bca3-0f46-4268-9ab1-5b17ce7b6841">
+                                  <SHORT-NAME>BswM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="95c08c54-5bcb-42cc-ae03-114f7cfbce0c">
+                                  <SHORT-NAME>ComM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/ComM_swc/ComponentTypes/ComM</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="cc96944c-40d0-4832-9538-687b14a025d3">
+                                  <SHORT-NAME>lock</SHORT-NAME>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/lock</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                              </COMPONENTS>
+                              <CONNECTORS>
+                                <ASSEMBLY-SW-CONNECTOR UUID="ff2c7b85-97e1-4e66-807d-dfd7bec4238d">
+                                  <SHORT-NAME>BswM_Switch_ESH_ModeSwitch_BswM_Notification_ESH_ModeNotification</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Switch_ESH_ModeSwitch</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_ESH_ModeNotification</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                              </CONNECTORS>
+                            </COMPOSITION-SW-COMPONENT-TYPE>
+                            <END-TO-END-PROTECTION-SET UUID="11644e08-6081-41b9-bc02-234f7dba3fd4">
+                              <SHORT-NAME>E2EPROTECTIONSET</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                              <END-TO-END-PROTECTIONS>
+                                <END-TO-END-PROTECTION UUID="49df59c3-e809-401a-adf3-c8840b648d47">
+                                  <SHORT-NAME>ECU_Composition_SG_Sig_Grp_0x212_SG_Sig_Grp_0x212_delegated</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:E2ESync</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <END-TO-END-PROFILE>
+                                    <CATEGORY>PROFILE_01</CATEGORY>
+                                    <DATA-IDS>
+                                      <DATA-ID>4112</DATA-ID>
+                                    </DATA-IDS>
+                                    <DATA-ID-MODE>0</DATA-ID-MODE>
+                                    <DATA-LENGTH>64</DATA-LENGTH>
+                                    <MAX-DELTA-COUNTER-INIT>2</MAX-DELTA-COUNTER-INIT>
+                                    <CRC-OFFSET>0</CRC-OFFSET>
+                                    <COUNTER-OFFSET>56</COUNTER-OFFSET>
+                                    <MAX-NO-NEW-OR-REPEATED-DATA>14</MAX-NO-NEW-OR-REPEATED-DATA>
+                                    <SYNC-COUNTER-INIT>2</SYNC-COUNTER-INIT>
+                                    <DATA-ID-NIBBLE-OFFSET>0</DATA-ID-NIBBLE-OFFSET>
+                                  </END-TO-END-PROFILE>
+                                  <END-TO-END-PROTECTION-VARIABLE-PROTOTYPES>
+                                    <END-TO-END-PROTECTION-VARIABLE-PROTOTYPE>
+                                      <SENDER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/AppComTx</CONTEXT-COMPONENT-REF>
+                                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/AppComTx/SG_Sig_Grp_0x212</CONTEXT-PORT-REF>
+                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/SG_Sig_Grp_0x212/SG_Sig_Grp_0x212</TARGET-DATA-PROTOTYPE-REF>
+                                      </SENDER-IREF>
+                                    </END-TO-END-PROTECTION-VARIABLE-PROTOTYPE>
+                                  </END-TO-END-PROTECTION-VARIABLE-PROTOTYPES>
+                                </END-TO-END-PROTECTION>
+                                <END-TO-END-PROTECTION UUID="a66bac1f-8537-44d0-9326-c90263eca3ba">
+                                  <SHORT-NAME>ECU_Composition_SG_Sig_Grp_0x300_SG_Sig_Grp_0x300_delegated_001</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:E2ESync</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <END-TO-END-PROFILE>
+                                    <CATEGORY>PROFILE_01</CATEGORY>
+                                    <DATA-IDS>
+                                      <DATA-ID>8224</DATA-ID>
+                                    </DATA-IDS>
+                                    <DATA-ID-MODE>0</DATA-ID-MODE>
+                                    <DATA-LENGTH>64</DATA-LENGTH>
+                                    <MAX-DELTA-COUNTER-INIT>2</MAX-DELTA-COUNTER-INIT>
+                                    <CRC-OFFSET>0</CRC-OFFSET>
+                                    <COUNTER-OFFSET>56</COUNTER-OFFSET>
+                                    <MAX-NO-NEW-OR-REPEATED-DATA>14</MAX-NO-NEW-OR-REPEATED-DATA>
+                                    <SYNC-COUNTER-INIT>2</SYNC-COUNTER-INIT>
+                                    <DATA-ID-NIBBLE-OFFSET>0</DATA-ID-NIBBLE-OFFSET>
+                                  </END-TO-END-PROFILE>
+                                  <END-TO-END-PROTECTION-VARIABLE-PROTOTYPES>
+                                    <END-TO-END-PROTECTION-VARIABLE-PROTOTYPE>
+                                      <RECEIVER-IREFS>
+                                        <RECEIVER-IREF>
+                                          <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/AppComRx</CONTEXT-COMPONENT-REF>
+                                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-COMPOSITION-REF>
+                                          <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/AppComRx/SG_Sig_Grp_0x300</CONTEXT-PORT-REF>
+                                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/SG_Sig_Grp_0x300_1/SG_Sig_Grp_0x300</TARGET-DATA-PROTOTYPE-REF>
+                                        </RECEIVER-IREF>
+                                      </RECEIVER-IREFS>
+                                    </END-TO-END-PROTECTION-VARIABLE-PROTOTYPE>
+                                  </END-TO-END-PROTECTION-VARIABLE-PROTOTYPES>
+                                </END-TO-END-PROTECTION>
+                              </END-TO-END-PROTECTIONS>
+                            </END-TO-END-PROTECTION-SET>
+                            <PORT-INTERFACE-MAPPING-SET UUID="b2305741-0f2e-4bd0-b1f4-e783bf3fad0c">
+                              <SHORT-NAME>PORTINTERFACEMAPPINGSET</SHORT-NAME>
+                              <ANNOTATIONS>
+                                <ANNOTATION>
+                                  <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                </ANNOTATION>
+                              </ANNOTATIONS>
+                            </PORT-INTERFACE-MAPPING-SET>
+                          </ELEMENTS>
+                          <AR-PACKAGES>
+                            <AR-PACKAGE UUID="f33d71d4-6478-4f31-b695-053d38927497">
+                              <SHORT-NAME>REFERENCES</SHORT-NAME>
+                              <ADMIN-DATA>
+                                <SDGS>
+                                  <SDG GID="DV:CfgReferences">
+                                    <SD GID="ff39eda1-eff1-425a-8e72-1e26bdfe574f">/AURIX/Dio_ib_bswmd</SD>
+                                    <SD GID="e2f456a9-52c4-4d85-89b8-895697e93995">/AURIX/Dio_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="bb7f27c6-da8f-428b-a44f-46f3ab3ea13c">/AURIX/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior</SD>
+                                    <SD GID="45a9e0d9-0f1c-4e02-a30b-854559e15298">/AURIX/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior</SD>
+                                    <SD GID="61f370ee-d86c-4518-94c7-30c1a84c6f07">/AURIX/Port_ib_bswmd</SD>
+                                    <SD GID="395b60d3-3599-4e61-a47a-609c312bb446">/AURIX/Port_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="dfc9dc32-c82f-463c-83d7-aaba9d8fd733">/AURIX/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior</SD>
+                                    <SD GID="d7d4dd15-b947-4a61-83ab-dd49a38d814d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
+                                    <SD GID="97d5bca3-0f46-4268-9ab1-5b17ce7b6841">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
+                                    <SD GID="95c08c54-5bcb-42cc-ae03-114f7cfbce0c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
+                                    <SD GID="c3cd986d-2daf-4af5-b4ba-a14742c2d05e">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
+                                    <SD GID="18fa748c-4f5d-48e0-9586-de09c5d1e0a7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
+                                    <SD GID="3904ca06-7d01-44c7-bc10-7efa7df1bf9f">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore0_swc</SD>
+                                    <SD GID="a5a953b6-3e37-45fe-8004-363422df5601">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore1_swc</SD>
+                                    <SD GID="178cce66-fe8f-4437-b7b5-5b2c5f9bf994">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore2_swc</SD>
+                                    <SD GID="cc96944c-40d0-4832-9538-687b14a025d3">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/lock</SD>
+                                    <SD GID="d15d044e-fb29-49e2-aae8-5a7bd99e46fe">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
+                                    <SD GID="99bdba4e-3e6b-457d-9e05-0cf1d808aa34">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
+                                    <SD GID="472cd6b0-dae9-44fa-959a-391611411746">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
+                                    <SD GID="B08F76C0-7D0F-4BD9-8056-256303B02E2A">/ComponentTypes/lock</SD>
+                                    <SD GID="E421EA8E-7F80-4F31-BA03-15FA8206A656">/ComponentTypes/lock/lock_InternalBehavior/TMT_Runnable</SD>
+                                    <SD GID="14D73BD1-7328-45EF-927A-F8A3EEF680B8">/ComponentTypes/lock/lock_control</SD>
+                                    <SD GID="6B48CB13-8CC6-4492-A00E-0F546E69027E">/ComponentTypes/lock/lock_status</SD>
+                                    <SD GID="80D3F562-98A9-4788-8E0A-5679FE0E63D1">/ComponentTypes/lock/outmode</SD>
+                                    <SD GID="57C9D3A1-AFE0-4C01-81E7-D4B72989F916">/ComponentTypes/lock_Implementation</SD>
+                                    <SD GID="8d9a7840-f2f2-4031-b4f7-ab2eddfb5a13">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
+                                    <SD GID="0f192f4d-bf0a-4ae2-a8ca-8e3c8ccc48b2">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="71a9f49a-c702-4b8b-93d1-eb9f2c37c0cb">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</SD>
+                                    <SD GID="deafc31a-dc7f-4af7-a88b-05b28b94e759">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="abf965e0-708c-45ee-8f79-48e9dbf5fd85">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM_MainFunction</SD>
+                                    <SD GID="2ca0be79-a54c-4579-a2b6-16fce4705e2d">/MICROSAR/BswM_swc/BswMMappingSet</SD>
+                                    <SD GID="e455f2e3-0af6-4db1-9ca0-cee4e79bbb47">/MICROSAR/BswM_swc/ComponentTypes/BswM</SD>
+                                    <SD GID="3f24c02d-d2f1-4ff0-a027-894eb975aa20">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior</SD>
+                                    <SD GID="2bbb468b-bbb9-46b0-bcb5-36b504f7ccc3">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction</SD>
+                                    <SD GID="a0199128-20b2-4a0e-8fcb-cd97182fd212">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction/DataReceivePointBswM_MainFunction_Request_ESH_PostRunRequest_0_requestedMode</SD>
+                                    <SD GID="3b092072-5bcb-48f7-a32c-b39b30412075">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/Timer_BswM_MainFunction</SD>
+                                    <SD GID="096a2407-456d-4060-8afa-515004c1e4b4">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_ESH_ModeNotification</SD>
+                                    <SD GID="76fd14a0-4386-454c-8f1f-511c3f4b81e2">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_PostRunRequest_0</SD>
+                                    <SD GID="b13b7ab0-12d2-4317-b35a-6bf92b7916b1">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_RunRequest_0</SD>
+                                    <SD GID="7c86264a-9809-4a3c-9493-6d39ec2f561e">/MICROSAR/BswM_swc/ComponentTypes/BswM/Switch_ESH_ModeSwitch</SD>
+                                    <SD GID="369436b4-14c0-4bff-95a8-cc76119d82bf">/MICROSAR/BswM_swc/DataTypes/BswM_ESH_Mode</SD>
+                                    <SD GID="12c07c20-7c7e-47a8-9ab3-bdfb84b42d14">/MICROSAR/BswM_swc/DataTypes/BswM_ESH_RunRequest</SD>
+                                    <SD GID="cbe43693-bac0-46cc-9ca5-6f6dfe0ef749">/MICROSAR/BswM_swc/DataTypes/BswM_ModeDecl_ComFault_State</SD>
+                                    <SD GID="2719f293-b222-4231-b304-420b057be455">/MICROSAR/BswM_swc/DataTypes/BswM_ModeDecl_ComFault_State_WithKL15</SD>
+                                    <SD GID="b8593dce-07db-41ba-a0b0-0bbc584d4b9b">/MICROSAR/BswM_swc/DataTypes/CompuMethods/BswM_ESH_Mode</SD>
+                                    <SD GID="1efa7210-9139-46ea-90a6-30bfa25f160a">/MICROSAR/BswM_swc/DataTypes/CompuMethods/BswM_ESH_RunRequest</SD>
+                                    <SD GID="9cb328ae-9025-462b-bef8-1acad3ce772d">/MICROSAR/BswM_swc/DataTypes/CompuMethods/BswM_ModeDecl_ComFault_State</SD>
+                                    <SD GID="7f45972a-638f-4e75-a3cd-8f852f439d97">/MICROSAR/BswM_swc/DataTypes/CompuMethods/BswM_ModeDecl_ComFault_State_WithKL15</SD>
+                                    <SD GID="aaadbb40-c408-4825-8701-14d53149d745">/MICROSAR/BswM_swc/DataTypes/DataConstrs/BswM_ESH_Mode_Constr</SD>
+                                    <SD GID="bf19ed06-f8f7-479f-b41d-28ceda5214db">/MICROSAR/BswM_swc/DataTypes/DataConstrs/BswM_ESH_RunRequest_Constr</SD>
+                                    <SD GID="81448598-9d34-40d2-992c-99611d2cb896">/MICROSAR/BswM_swc/DataTypes/DataConstrs/BswM_ModeDecl_ComFault_State_Constr</SD>
+                                    <SD GID="7ca4a36b-3960-4010-9615-5709a35803a5">/MICROSAR/BswM_swc/DataTypes/DataConstrs/BswM_ModeDecl_ComFault_State_WithKL15_Constr</SD>
+                                    <SD GID="71d15595-8d77-4229-8cad-25634bf24f90">/MICROSAR/BswM_swc/ESH_Mode</SD>
+                                    <SD GID="9700b14b-0bd7-41f4-b2b1-0ba8a3b357b1">/MICROSAR/BswM_swc/ESH_Mode/POSTRUN</SD>
+                                    <SD GID="7f6a377f-3fa5-41d1-a91d-08facdefe3c9">/MICROSAR/BswM_swc/ESH_Mode/RUN</SD>
+                                    <SD GID="e9957a7f-8ed7-46b3-bcec-da8d3f779658">/MICROSAR/BswM_swc/ESH_Mode/SHUTDOWN</SD>
+                                    <SD GID="9b56fa18-a026-44c9-8687-a06b9a82bf0e">/MICROSAR/BswM_swc/ESH_Mode/STARTUP</SD>
+                                    <SD GID="fdba5909-8912-4ea2-a0f3-492b21fc8ae1">/MICROSAR/BswM_swc/ESH_Mode/WAKEUP</SD>
+                                    <SD GID="ec6a5aae-595d-4501-8ba2-a23c518608af">/MICROSAR/BswM_swc/ESH_RunRequest</SD>
+                                    <SD GID="7679b323-e101-4e66-b92d-40d35fe440c9">/MICROSAR/BswM_swc/ESH_RunRequest/RELEASED</SD>
+                                    <SD GID="832c7adb-8deb-4d2b-8999-867c061af397">/MICROSAR/BswM_swc/ESH_RunRequest/REQUESTED</SD>
+                                    <SD GID="166c3567-c07b-47b4-bb41-09194f51c82d">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode</SD>
+                                    <SD GID="a8307c8c-e65a-479d-ba04-8e6c32a9809a">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode/BswM_MDGP_ESH_Mode</SD>
+                                    <SD GID="6c4e1815-b73e-4a27-83a3-a8b18c46c05a">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_RunRequest/BswM_MDGP_ESH_RunRequest</SD>
+                                    <SD GID="52d08a77-a69f-4419-b96c-f057be8efd9b">/MICROSAR/BswM_swc/Interfaces/BswM_SRI_BswM_MSI_ESH_RunRequest_BswM_MDGP_ESH_RunRequest</SD>
+                                    <SD GID="2c447b37-a483-4a3c-b8db-67c96db5926c">/MICROSAR/BswM_swc/Interfaces/BswM_SRI_BswM_MSI_ESH_RunRequest_BswM_MDGP_ESH_RunRequest/requestedMode</SD>
+                                    <SD GID="72824882-521d-41bc-bd76-0b787850a0e8">/MICROSAR/BswM_swc/ModeDecl_ComFault_State</SD>
+                                    <SD GID="e2586912-f6a1-4d8f-ae5f-b9b11217e167">/MICROSAR/BswM_swc/ModeDecl_ComFault_State/ComFaultPreCond_FAIL</SD>
+                                    <SD GID="e28a6006-99c9-4fb7-8d01-6fcf4e87207e">/MICROSAR/BswM_swc/ModeDecl_ComFault_State_WithKL15</SD>
+                                    <SD GID="abb47e98-8242-4172-a28d-e92045dc65c1">/MICROSAR/BswM_swc/ModeDecl_ComFault_State_WithKL15/ComFaultPreCondWithKL15_FAIL</SD>
+                                    <SD GID="bfd6e420-eb05-45fd-8bd1-e250ef3d5c1b">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior</SD>
+                                    <SD GID="600c362e-b8ee-4eef-9197-6a8f035ad7ad">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="9ab7c8de-18ee-44c4-a6f0-eb280ce567de">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="a0fb054d-0ae2-4269-8443-e82a25713241">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="1e0cca15-1b2e-477e-8bcd-cd2d73d5f25a">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="e9a2771f-b160-409b-80d2-2bab03bd4448">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="587b1b50-905e-4424-b452-b5e9ade16fac">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="d15bcaa6-6a0a-4a97-b52d-ac51f00a610a">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="6835f3e3-ba9b-4c1f-8163-f853d5a1cc5a">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_7</SD>
+                                    <SD GID="1b961db9-31f4-4f2b-9f38-70b39c3a6ba7">/MICROSAR/CanIf_ib_bswmd/XcpEvents</SD>
+                                    <SD GID="be353aa5-8e87-48c3-944f-45e3e80b2b50">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior</SD>
+                                    <SD GID="6b59b8a0-09ae-43d6-90cc-61de665d7d07">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="f05b40cc-999f-446d-a12d-fadba5e65fa7">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="d7ca2158-6974-430d-bfe4-26ec58ac7685">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="5a1e6190-2e22-4434-b18f-8f2f4b36ac51">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="47dd7bc3-c82c-4e0e-8ea0-d1f9df582bf6">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="47a0167a-8df0-456c-ae4c-858b78868aae">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="57db53d9-465b-4c07-9bfb-e916fea0f2bd">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CANNM_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="5787947a-512c-4b14-bf17-519b78df41d3">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CanNm_MainFunction</SD>
+                                    <SD GID="de758c76-6e04-45ec-b7b2-ce255cb8a7af">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm/CanNmBehavior/CanNm_MainFunctionTimingEvent0</SD>
+                                    <SD GID="00399cac-f545-442e-a00e-3e3f540d8c76">/MICROSAR/CanNm_ib_bswmd/BswModuleDescriptions/CanNm_MainFunction</SD>
+                                    <SD GID="c38d4f03-5c58-42e5-a28d-4304b9bc1890">/MICROSAR/CanNm_ib_bswmd/XcpEvents</SD>
+                                    <SD GID="91a1e648-9da9-4b4f-9c3e-989f85e7eb0e">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior</SD>
+                                    <SD GID="d85125ad-32e5-45a8-add9-207dff423127">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="eec9666a-22c4-442d-bc7a-b7a9bdf24b59">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="957371b7-0cc3-43dc-afe0-71ed74072c67">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="3651265a-414e-4ca2-9ef2-74cb7030f1ba">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="4729e3dc-ed46-4459-a6cf-283ae1830b7a">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="165740df-a208-40ba-8498-100c2a2bd7b8">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CANSM_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="0c954b57-a3db-4f47-8cfb-d4316232f358">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CanSM_MainFunction</SD>
+                                    <SD GID="9add5f23-e9a6-46f3-8a99-b7a60f844ade">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM/CanSMBehavior/CanSM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="8c0c9e0b-8064-4489-8acd-b80541346c27">/MICROSAR/CanSM_ib_bswmd/BswModuleDescriptions/CanSM_MainFunction</SD>
+                                    <SD GID="9e28ab94-8a96-4d71-a526-c72df7c074a0">/MICROSAR/CanSM_ib_bswmd/XcpEvents</SD>
+                                    <SD GID="0b849d6c-1aa6-4b74-8c5e-1e2495b68c14">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior</SD>
+                                    <SD GID="e4324bb1-aa60-4e18-9e1a-20ec6aa88b82">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/CAN_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="4811a4d8-46a0-4de8-adaa-d6139202e947">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/CAN_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="6ff5cb86-22dc-4dd2-8e57-04772d57482a">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/CAN_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="88901748-5f4a-4934-9b58-e75fc20e5aa9">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/CAN_EXCLUSIVE_AREA_3</SD>
+                                    <SD GID="844827d0-6148-4275-b3e8-418913e84de7">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/CAN_EXCLUSIVE_AREA_4</SD>
+                                    <SD GID="d1aca8d5-a67a-4555-a6c8-9bcab1f33d3a">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/CAN_EXCLUSIVE_AREA_5</SD>
+                                    <SD GID="5907c64c-4256-41ac-b807-4fc971072ffb">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/CAN_EXCLUSIVE_AREA_6</SD>
+                                    <SD GID="306bb97e-6d6f-4645-8849-42c30119a80a">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/CAN_EXCLUSIVE_AREA_7</SD>
+                                    <SD GID="24205318-9a84-4e7d-aad4-282e70e852fe">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/Can_MainFunction_BusOff</SD>
+                                    <SD GID="5d758117-52a6-46ac-847a-0c9d8c2fb0de">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/Can_MainFunction_BusOffTimingEvent0</SD>
+                                    <SD GID="47bc0efd-bb8c-4449-b3ec-257182d05908">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/Can_MainFunction_Mode</SD>
+                                    <SD GID="25522433-66ac-4711-b76f-241b30f79ebb">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/Can_MainFunction_ModeTimingEvent0</SD>
+                                    <SD GID="7d2342bd-c162-4f3d-8ae0-ae0a4a5974a4">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/Can_MainFunction_Read</SD>
+                                    <SD GID="53d988eb-5446-42ac-969c-38b9b5ca1270">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/Can_MainFunction_ReadTimingEvent0</SD>
+                                    <SD GID="19dfb9f6-bb32-4cae-9a1a-c318b166db7d">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/Can_MainFunction_Wakeup</SD>
+                                    <SD GID="cb73913b-89c5-4a23-aa78-362834c33b26">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/Can_MainFunction_WakeupTimingEvent0</SD>
+                                    <SD GID="974c9886-4ea2-49ef-8920-c8e0a1d327bf">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/Can_MainFunction_Write</SD>
+                                    <SD GID="3ad2469f-9edb-4836-8aaf-f4d0de35410a">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can/Can_TricoreMultican_Behavior/Can_MainFunction_WriteTimingEvent0</SD>
+                                    <SD GID="cc312a43-1fde-427d-9893-09a020f92730">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can_MainFunction_BusOff</SD>
+                                    <SD GID="b553c475-0066-4379-a1dc-fdbb4cf86646">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can_MainFunction_Mode</SD>
+                                    <SD GID="e7694c51-0d28-42dc-abf1-90cbe6319243">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can_MainFunction_Read</SD>
+                                    <SD GID="c8010d65-6b63-4c98-8394-24d92a401c65">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can_MainFunction_Wakeup</SD>
+                                    <SD GID="16a6b779-f987-4554-81fa-a8b761cb1381">/MICROSAR/Can_TricoreMultican_ib_bswmd/BswModuleDescriptions/Can_MainFunction_Write</SD>
+                                    <SD GID="b72bb92f-216a-4cf8-9f52-a46f5a0564bb">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior</SD>
+                                    <SD GID="ab025d96-5e4b-471d-aa1f-5953c70167ac">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="06da1f9e-a744-4d96-912e-a0406993b412">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/COMM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="3413838c-e5c3-4758-81ea-f7ca6c6059b3">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/ComM_MainFunction_0</SD>
+                                    <SD GID="baa6dd3d-5e72-4262-abc9-6f7f74892145">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM/ComMBehavior/ComM_MainFunction_0TimingEvent0</SD>
+                                    <SD GID="5a11aaf8-fc48-41f5-bde3-2ce739c6e41d">/MICROSAR/ComM_ib_bswmd/BswModuleDescriptions/ComM_MainFunction_0</SD>
+                                    <SD GID="5f5d4fd7-86b7-47c8-a6fc-54c655ad271b">/MICROSAR/ComM_ib_bswmd/XcpEvents</SD>
+                                    <SD GID="87efcf68-492c-4ed6-aa84-90dd29c888ab">/MICROSAR/ComM_swc/ComMMode</SD>
+                                    <SD GID="f175f765-d24c-4014-bc44-b768e8463f93">/MICROSAR/ComM_swc/ComMMode/COMM_NO_COMMUNICATION</SD>
+                                    <SD GID="f2509024-b12e-453b-9ad9-5aa5b0f3fa5c">/MICROSAR/ComM_swc/ComMMode_DataTypeMappingSet</SD>
+                                    <SD GID="265bca39-87d9-49d1-8ad6-f1c2d355e5f9">/MICROSAR/ComM_swc/ComponentTypes/ComM/CL_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="29f717bd-058b-4f65-84f9-67a21b33e64f">/MICROSAR/ComM_swc/ComponentTypes/ComM/CW_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="817780e8-0982-483b-b62c-235a66f82a88">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior</SD>
+                                    <SD GID="f3cf69bb-95e9-44ea-84b5-1fa47ee0be32">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/ComM_MainFunction_0</SD>
+                                    <SD GID="9dcef7e4-0168-4d8f-b214-28cbfd205384">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetCurrentComMode</SD>
+                                    <SD GID="07c8f49e-024d-4c9e-bb71-7b2cf358444e">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetInhibitionStatus</SD>
+                                    <SD GID="47593c39-8632-42f0-b3de-33c2abcc3859">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetMaxComMode</SD>
+                                    <SD GID="b471a5ba-efa1-4577-b6ed-d83a0f4f61ed">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/GetRequestedComMode</SD>
+                                    <SD GID="dfdde43d-e20b-4a7c-85e5-54242cf6cf02">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/LimitChannelToNoComMode</SD>
+                                    <SD GID="fb6dce19-9df4-4b52-855d-173c086626d2">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/LimitECUToNoComMode</SD>
+                                    <SD GID="ab138b3c-5942-4e7c-a5f5-a71e2ba780a2">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetCurrentComMode_GetCurrentComMode_UR_ComMUser</SD>
+                                    <SD GID="08a26870-e406-4a9b-a851-1c9780101e8c">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetInhibitionStatus_GetInhibitionStatus_CL_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="adb1fb0c-3832-4a20-83d7-da0c85bf30ab">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetInhibitionStatus_GetInhibitionStatus_CW_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="b131631e-6321-4451-83e3-9eefd92c8453">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetMaxComMode_GetMaxComMode_UR_ComMUser</SD>
+                                    <SD GID="148e5323-30ce-473c-b34c-afada1cfd5ea">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventGetRequestedComMode_GetRequestedComMode_UR_ComMUser</SD>
+                                    <SD GID="8cd65b1d-c5a1-42f3-825b-afdc73e88d3b">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventLimitChannelToNoComMode_LimitChannelToNoComMode_CL_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="c4935597-4348-4b79-a1c6-f7c99fea0559">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventLimitECUToNoComMode_LimitECUToNoComMode_modeLimitation</SD>
+                                    <SD GID="b3626dd4-7335-4ff0-8662-62137f6108fc">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventPreventWakeUp_PreventWakeUp_CW_CN_CAN00_5e566ad9</SD>
+                                    <SD GID="b3aebaa0-474d-4a27-9f9c-adc7f42ee788">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventReadInhibitCounter_ReadInhibitCounter_modeLimitation</SD>
+                                    <SD GID="b3d4ecae-7263-48e4-87eb-39a63812834e">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventRequestComMode_RequestComMode_UR_ComMUser</SD>
+                                    <SD GID="16b5cbf4-c6bd-4bcf-a64e-ca64b1504c33">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventResetInhibitCounter_ResetInhibitCounter_modeLimitation</SD>
+                                    <SD GID="72ea3dbc-ab69-4011-bb7c-3edcedee0aec">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/OpEventSetECUGroupClassification_SetECUGroupClassification_modeLimitation</SD>
+                                    <SD GID="879729bc-e80b-45f3-b7e0-90371c4223cd">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/PreventWakeUp</SD>
+                                    <SD GID="4af881eb-7c86-44fe-a350-25b9efdd5465">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/ReadInhibitCounter</SD>
+                                    <SD GID="9515af7a-9650-4671-b6f3-87baae0a0a46">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/RequestComMode</SD>
+                                    <SD GID="c5912247-69b0-4d52-abcd-69cc954280c8">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/ResetInhibitCounter</SD>
+                                    <SD GID="e840f140-f285-42cc-bff1-f615c45d9e61">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/SetECUGroupClassification</SD>
+                                    <SD GID="d74e9327-bbec-4d84-9140-49d9d705c900">/MICROSAR/ComM_swc/ComponentTypes/ComM/ComMInternalBehavior/Timer_ComM_MainFunction_0</SD>
+                                    <SD GID="1e442645-227b-417a-928a-862239e8551e">/MICROSAR/ComM_swc/ComponentTypes/ComM/UR_ComMUser</SD>
+                                    <SD GID="49dc38e4-b2d4-4636-aa07-68d4b2fb8886">/MICROSAR/ComM_swc/ComponentTypes/ComM/modeLimitation</SD>
+                                    <SD GID="ef53199e-b3c8-48d1-9bbe-5b714c72cbf0">/MICROSAR/ComM_swc/DataTypes/ComM_InhibitionStatusType</SD>
+                                    <SD GID="acd830d7-ca96-4b11-906e-01adab6a4d4d">/MICROSAR/ComM_swc/DataTypes/ComM_ModeType</SD>
+                                    <SD GID="eb5a9763-031c-4c2e-b29b-7f5dd0274c3e">/MICROSAR/ComM_swc/DataTypes/ComM_UserHandleType</SD>
+                                    <SD GID="ef5291d5-44c8-4e6b-9511-9a0bb4213cfc">/MICROSAR/ComM_swc/DataTypes/CompuMethods/ComM_ModeType</SD>
+                                    <SD GID="58899a2e-11ba-46c4-8104-296fc573b730">/MICROSAR/ComM_swc/DataTypes/DataConstrs/ComM_InhibitionStatusType_Constr</SD>
+                                    <SD GID="84a90823-04f1-433a-8cd6-3992c8e77261">/MICROSAR/ComM_swc/DataTypes/DataConstrs/ComM_ModeType_Constr</SD>
+                                    <SD GID="9e7eb7c2-2c00-4ecf-adab-4013c10393f9">/MICROSAR/ComM_swc/DataTypes/DataConstrs/ComM_UserHandleType_Constr</SD>
+                                    <SD GID="c1b27619-492a-4c4c-b977-6d9538d26220">/MICROSAR/ComM_swc/DataTypes/DataConstrs/NetworkHandleType_Constr</SD>
+                                    <SD GID="9cc5ecd7-917d-4f5a-a021-cf89b5e2bf96">/MICROSAR/ComM_swc/DataTypes/NetworkHandleType</SD>
+                                    <SD GID="c6bb3242-4bd2-45d0-8a29-7ee249b58f1f">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation</SD>
+                                    <SD GID="3ce5b6fc-c034-4168-9ddc-788ee70a230e">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation/E_NOT_OK</SD>
+                                    <SD GID="5cb97a21-bdb1-4abd-b9c3-59bda1c4ac14">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation/GetInhibitionStatus</SD>
+                                    <SD GID="83da133a-3389-4709-92a2-3b52e69356da">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelLimitation/LimitChannelToNoComMode</SD>
+                                    <SD GID="43456dcb-7943-442b-bc59-2e867bf8f121">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp</SD>
+                                    <SD GID="1c166354-4803-4ea4-9167-260c93ebc859">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp/E_NOT_OK</SD>
+                                    <SD GID="92fc4228-f240-4405-9e85-3cba512d49fd">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp/GetInhibitionStatus</SD>
+                                    <SD GID="bc11b324-a24e-45ca-994f-7a36f73c3f4b">/MICROSAR/ComM_swc/Interfaces/ComM_ChannelWakeUp/PreventWakeUp</SD>
+                                    <SD GID="f2fc0b9a-11df-4630-b0f0-abe85dd027d5">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation</SD>
+                                    <SD GID="ea5fc8c8-5563-45d8-9cbd-3f8d32c690c0">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/E_NOT_OK</SD>
+                                    <SD GID="9e8fc1bc-dea3-458b-9294-3d8df8874045">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/LimitECUToNoComMode</SD>
+                                    <SD GID="45d117e1-c473-4e8c-9184-6487a34898f8">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/ReadInhibitCounter</SD>
+                                    <SD GID="3e0cb182-c5ac-4014-b32a-fbf8fbbc6cfe">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/ResetInhibitCounter</SD>
+                                    <SD GID="6d894a5b-409d-48e0-b666-ed6ca24c0f5c">/MICROSAR/ComM_swc/Interfaces/ComM_ECUModeLimitation/SetECUGroupClassification</SD>
+                                    <SD GID="9241eaae-6b70-46a6-be99-00f675687227">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest</SD>
+                                    <SD GID="5b87dc93-1850-436b-9399-b20a53620599">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/E_MODE_LIMITATION</SD>
+                                    <SD GID="ada536a4-58e4-4d33-80a4-aad62e9a40ab">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/E_NOT_OK</SD>
+                                    <SD GID="840521b4-d7b2-4058-b16b-c543d61c4a4b">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetCurrentComMode</SD>
+                                    <SD GID="813e719a-5185-455b-ae05-3c31ad73c983">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetMaxComMode</SD>
+                                    <SD GID="d5c20d4a-f476-4a5b-913e-8d2a10597df7">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetRequestedComMode</SD>
+                                    <SD GID="44f7c5c6-19a5-4bda-86c8-f97bcdc63d6d">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/RequestComMode</SD>
+                                    <SD GID="be7dc0f9-1494-4a10-9816-1e8c610b7a3b">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior</SD>
+                                    <SD GID="30aad4c0-6052-4293-89c8-6e9c9c375db9">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/COM_EXCLUSIVE_AREA_BOTH</SD>
+                                    <SD GID="2072ff50-a694-4310-8709-b2e3c391dd86">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/COM_EXCLUSIVE_AREA_RX</SD>
+                                    <SD GID="9b8f2c28-23a2-4a5a-8178-1267858f16c9">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/COM_EXCLUSIVE_AREA_TX</SD>
+                                    <SD GID="83dcb0fd-a6e7-4421-9cfd-ef78cb0c2d72">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionRx</SD>
+                                    <SD GID="90bf4ff9-26d1-4297-b1cd-edcc17def765">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionRxTimingEvent0</SD>
+                                    <SD GID="20962476-456e-4dfc-a6a6-8aedc600c2ba">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionTx</SD>
+                                    <SD GID="2d94c32e-d7f1-42a6-86bd-64986039ae2b">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com/ComBehavior/Com_MainFunctionTxTimingEvent0</SD>
+                                    <SD GID="f13696ec-1f4d-46e4-95f2-a3c3a0081ae2">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com_MainFunctionRx</SD>
+                                    <SD GID="545e4ee4-36a0-4f45-bb3e-53c4c281e3a9">/MICROSAR/Com_ib_bswmd/BswModuleDescriptions/Com_MainFunctionTx</SD>
+                                    <SD GID="82ccf0c3-044c-4d9b-9edf-ec6d691b3ae4">/MICROSAR/Com_ib_bswmd/XcpEvents</SD>
+                                    <SD GID="1f4fba7e-7799-4e77-8e5a-82a1db4819db">/MICROSAR/Det_ib_bswmd/BswModuleDescriptions/Det/DetBehavior</SD>
+                                    <SD GID="b38d1c6a-01ce-4c45-8a2d-faf38ccafbf9">/MICROSAR/Det_ib_bswmd/BswModuleDescriptions/Det/DetBehavior/DET_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="5bc94c33-528d-4524-b48e-4ccfbe186396">/MICROSAR/Det_swc/ComponentTypes/Det</SD>
+                                    <SD GID="d55ebf17-d566-4fbe-9e32-d238711cb261">/MICROSAR/Det_swc/ComponentTypes/Det/DetInternalBehavior</SD>
+                                    <SD GID="80a7c9fe-67e9-4f91-b663-1383df42c869">/MICROSAR/Det_swc/ComponentTypes/Det/DetInternalBehavior/OpEventReportError_ReportError_DetModule</SD>
+                                    <SD GID="8042ac7d-1e58-4224-92d6-c4bfc6cdf430">/MICROSAR/Det_swc/ComponentTypes/Det/DetInternalBehavior/ReportError</SD>
+                                    <SD GID="ffb3d7da-024b-4318-a7d9-e8a5e1c9394f">/MICROSAR/Det_swc/ComponentTypes/Det/DetModule</SD>
+                                    <SD GID="8c83165f-4ea7-4e2b-9c60-bdc504b94734">/MICROSAR/Det_swc/Interfaces/DETService/E_OK</SD>
+                                    <SD GID="c395643e-7c58-490c-b6bc-55a46f43a3c2">/MICROSAR/Det_swc/Interfaces/DETServiceLegacy</SD>
+                                    <SD GID="e68a4a28-511f-450f-ac52-a6f78e4440cc">/MICROSAR/Det_swc/Interfaces/DETServiceLegacy/E_OK</SD>
+                                    <SD GID="9a399f1c-b8c4-42a9-833d-c54cb4623feb">/MICROSAR/Det_swc/Interfaces/DETServiceLegacy/ReportError</SD>
+                                    <SD GID="8292c9db-3e2a-474f-a186-b1c6fc28953a">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior</SD>
+                                    <SD GID="999d752f-8ced-44ef-9b7c-d391ac2f01f4">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="071c5ba8-3cf7-4fd6-9ca8-ec327d6a6c79">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="6926358c-c917-4307-ba55-4d7e730af595">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/ECUM_EXCLUSIVE_AREA_2</SD>
+                                    <SD GID="f36e6fbc-bf1b-4066-9e67-4f589a7b6f5d">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunction</SD>
+                                    <SD GID="e0890f14-8274-4167-b4eb-faae8b38715f">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="a1d2399b-0de6-47ca-81a7-804e4c61f432">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunctionTimingEvent1</SD>
+                                    <SD GID="d7e50295-5e0c-4f41-936f-685ee09c9372">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM/EcuMBehavior/EcuM_MainFunctionTimingEvent2</SD>
+                                    <SD GID="72e65539-c9e3-4f39-a68a-98a4678252c9">/MICROSAR/EcuM_ib_bswmd/BswModuleDescriptions/EcuM_MainFunction</SD>
+                                    <SD GID="50ec5e2a-5071-4f68-8ba9-4ffd3a147dda">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</SD>
+                                    <SD GID="6ed59a0d-baf4-4fa5-8bca-b325c24d3b97">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior</SD>
+                                    <SD GID="89dfe4c4-5a5e-4515-af19-18160bfa4d4f">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/EcuM_MainFunction</SD>
+                                    <SD GID="155d59ce-7923-4da4-9e8a-ace91f557cf5">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/EcuM_MainFunction/ModeSwitchPointEcuM_MainFunction_currentMode_currentMode</SD>
+                                    <SD GID="51f084bb-73bc-40db-a432-1e7724e89064">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetBootTarget</SD>
+                                    <SD GID="6f694f78-78c6-4fcd-8c6e-89c321667feb">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetLastShutdownTarget</SD>
+                                    <SD GID="923bf106-692f-4b1b-952a-748681df018f">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetShutdownCause</SD>
+                                    <SD GID="fe276fa2-4424-402e-8e57-fe7a1e3edacf">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/GetShutdownTarget</SD>
+                                    <SD GID="19e318fb-3d84-4b21-bef8-07338d8bfabf">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetBootTarget_GetBootTarget_EcuM_BootTarget</SD>
+                                    <SD GID="a2d4d34b-2579-4897-b6bf-430d14ca10c1">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetLastShutdownTarget_GetLastShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="9fc5570a-a281-428c-b5bc-308d7ac400e2">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetShutdownCause_GetShutdownCause_EcuM_ShutdownTarget</SD>
+                                    <SD GID="836fc028-0a99-41af-848d-bc9646043692">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventGetShutdownTarget_GetShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="b095d136-207d-44fd-ad3a-c27b2c5b1bf1">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectBootTarget_SelectBootTarget_EcuM_BootTarget</SD>
+                                    <SD GID="72f0cc1e-8056-4af4-8898-5d2ae6f424e4">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectShutdownCause_SelectShutdownCause_EcuM_ShutdownTarget</SD>
+                                    <SD GID="bd53d70e-57be-4abf-afea-732a18cc315c">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/OpEventSelectShutdownTarget_SelectShutdownTarget_EcuM_ShutdownTarget</SD>
+                                    <SD GID="42470c58-7a33-4bd5-8d86-0b69e07141e3">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectBootTarget</SD>
+                                    <SD GID="283923c0-9c00-4d45-88ee-5bf11dd15228">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectShutdownCause</SD>
+                                    <SD GID="8bda05ff-aa6b-4aac-8011-80d101f79a63">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/SelectShutdownTarget</SD>
+                                    <SD GID="f291ac41-0159-40f3-8fb5-2748da10c0ec">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuMInternalBehavior/Timer_EcuM_MainFunction</SD>
+                                    <SD GID="adab482f-73c9-44e4-9f13-649b105e63d5">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuM_BootTarget</SD>
+                                    <SD GID="65c53008-92c4-44de-8686-92b39b133909">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/EcuM_ShutdownTarget</SD>
+                                    <SD GID="5dcf2b26-fa98-43a0-8447-a8381e003102">/MICROSAR/EcuM_swc/ComponentTypes/EcuM/currentMode</SD>
+                                    <SD GID="813a24c6-d7f8-4db8-b69c-1a9c00116071">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_BootTargetType</SD>
+                                    <SD GID="13494a75-b0da-4daf-8158-ea8c39c09a53">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_ModeType</SD>
+                                    <SD GID="235a642e-7b77-4343-aff6-a42508e0eeea">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_ShutdownCauseType</SD>
+                                    <SD GID="ca36e032-2ac9-492b-a834-8de98820777c">/MICROSAR/EcuM_swc/DataTypes/CompuMethods/EcuM_StateType</SD>
+                                    <SD GID="d0adcf2d-e161-47a0-ad02-9f5d28eb77d9">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_BootTargetType_Constr</SD>
+                                    <SD GID="ee631e7d-9d51-4f53-beb1-6783d07400b0">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_ModeType_Constr</SD>
+                                    <SD GID="c7ce5a9e-50fe-4faf-9c2c-70c70775f7d9">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_ShutdownCauseType_Constr</SD>
+                                    <SD GID="0db98aea-19e4-4270-b9db-5f44eba9da64">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_StateType_Constr</SD>
+                                    <SD GID="c0c478a4-46fb-45e2-a0ad-026a950ddb49">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_TimeType_Constr</SD>
+                                    <SD GID="93d987c1-663e-404a-b0ea-53c2ad2095a8">/MICROSAR/EcuM_swc/DataTypes/DataConstrs/EcuM_UserType_Constr</SD>
+                                    <SD GID="f814eb0d-792b-48ed-a9b3-15f36451d319">/MICROSAR/EcuM_swc/DataTypes/EcuM_BootTargetType</SD>
+                                    <SD GID="9c192620-4e07-4761-b31f-4fe0ccb65369">/MICROSAR/EcuM_swc/DataTypes/EcuM_ModeType</SD>
+                                    <SD GID="6a55039e-3ff1-4bd8-9141-5b4024c34918">/MICROSAR/EcuM_swc/DataTypes/EcuM_ShutdownCauseType</SD>
+                                    <SD GID="a0d83956-56fd-4b6f-b28a-8961b3100f26">/MICROSAR/EcuM_swc/DataTypes/EcuM_StateType</SD>
+                                    <SD GID="20542f79-28f2-403d-9472-8a99fd213694">/MICROSAR/EcuM_swc/DataTypes/EcuM_TimeType</SD>
+                                    <SD GID="de83b1b3-1f88-460c-9ae1-f96ee9871b2b">/MICROSAR/EcuM_swc/DataTypes/EcuM_UserType</SD>
+                                    <SD GID="76afd6de-633f-4065-aa9f-b901aad14cc4">/MICROSAR/EcuM_swc/EcuMMode_DataTypeMappingSet</SD>
+                                    <SD GID="6e479e03-50ed-4b23-8e8f-e4268ff14dd4">/MICROSAR/EcuM_swc/EcuM_Mode</SD>
+                                    <SD GID="c9afdfa1-c9cf-4345-8aa9-ce1a714c5528">/MICROSAR/EcuM_swc/EcuM_Mode/POST_RUN</SD>
+                                    <SD GID="4d3479a1-a07d-479a-8b00-9503af26ac71">/MICROSAR/EcuM_swc/EcuM_Mode/RUN</SD>
+                                    <SD GID="7712b629-71be-4099-b780-c9154d93a6a7">/MICROSAR/EcuM_swc/EcuM_Mode/SHUTDOWN</SD>
+                                    <SD GID="2a16feac-9688-4947-b77b-112b895d4f0d">/MICROSAR/EcuM_swc/EcuM_Mode/SLEEP</SD>
+                                    <SD GID="ed4f4f01-f79e-4aa1-bb4f-6a64bdcfea83">/MICROSAR/EcuM_swc/EcuM_Mode/STARTUP</SD>
+                                    <SD GID="a5b2ab71-033b-446e-8743-0c337f4ba0d1">/MICROSAR/EcuM_swc/EcuM_Mode/WAKE_SLEEP</SD>
+                                    <SD GID="725e48bd-ef85-4969-a7a1-2e6c17d961d6">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget</SD>
+                                    <SD GID="c2a493f0-140b-4c92-b984-caa904621bd9">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/E_NOT_OK</SD>
+                                    <SD GID="854f0f50-5016-4223-ba39-26cf2099f648">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/GetBootTarget</SD>
+                                    <SD GID="ba9dcd0c-e199-45b8-86b5-9655cc319944">/MICROSAR/EcuM_swc/Interfaces/EcuM_BootTarget/SelectBootTarget</SD>
+                                    <SD GID="92de98cc-2e4a-406d-b679-e7f50c3c9aa6">/MICROSAR/EcuM_swc/Interfaces/EcuM_CurrentMode</SD>
+                                    <SD GID="33682d68-9c24-4022-af4f-c5e36b284e7d">/MICROSAR/EcuM_swc/Interfaces/EcuM_CurrentMode/currentMode</SD>
+                                    <SD GID="5f77d083-9186-44e0-b4a2-f080f8819824">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget</SD>
+                                    <SD GID="7a0ebf91-2a34-4922-a5a2-5e9b8aa29e07">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/E_NOT_OK</SD>
+                                    <SD GID="5523eef2-ebd3-4705-a570-0fd24cff46e4">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetLastShutdownTarget</SD>
+                                    <SD GID="90d755bb-04c8-47de-beb8-d438289d0dd7">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownCause</SD>
+                                    <SD GID="b83c280f-45e0-41d3-bf0a-6c5b776897ea">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/GetShutdownTarget</SD>
+                                    <SD GID="4885c023-03a3-425b-8559-c1d217691143">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownCause</SD>
+                                    <SD GID="7e160556-493e-4859-9902-348a5aee05db">/MICROSAR/EcuM_swc/Interfaces/EcuM_ShutdownTarget/SelectShutdownTarget</SD>
+                                    <SD GID="132af3bb-d7ef-4bb6-b8cd-231331f01270">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior</SD>
+                                    <SD GID="d8751c34-6abf-445a-bb70-55687e426302">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior/NM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="f71d3cfa-6fff-49ef-812d-7cb5a9942a9c">/MICROSAR/Nm_ib_bswmd/BswModuleDescriptions/Nm/NmBehavior/NM_EXCLUSIVE_AREA_1</SD>
+                                    <SD GID="af09d6fc-b86b-4719-94ce-1606d0db4ed5">/MICROSAR/Nm_ib_bswmd/XcpEvents</SD>
+                                    <SD GID="2f6bb0b9-9c7e-441b-9f3c-885d13332a8b">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc</SD>
+                                    <SD GID="323ba490-28bf-4b96-af3c-7b7fea180722">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/OsService_SystemTimer_Core0</SD>
+                                    <SD GID="304766e4-1af4-4c8c-b63d-0ac134c4c8f3">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior</SD>
+                                    <SD GID="dcc4cf03-76cb-44db-8fe4-eccb6e6d9286">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/GetCounterValue</SD>
+                                    <SD GID="878b0eeb-42a4-4325-8c2c-16ad88db3208">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/GetElapsedValue</SD>
+                                    <SD GID="2942ed38-c362-41f7-9d53-21fbc9a9b1e4">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/OpEventGetCounterValue_GetCounterValue_OsService_SystemTimer_Core0</SD>
+                                    <SD GID="5c46241b-fd92-4ff1-84c1-7920bef97d11">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc/Os_OsCore0_swcInternalBehavior/OpEventGetElapsedValue_GetElapsedValue_OsService_SystemTimer_Core0</SD>
+                                    <SD GID="81bb774e-bc12-4601-8a24-aaa5fdf5ff64">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc</SD>
+                                    <SD GID="1890d0f3-11b5-40d2-acd0-38f378914a62">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/OsService_SystemTimer_Core1</SD>
+                                    <SD GID="07751bd5-82cc-40d7-80b9-835c6ca07423">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/Os_OsCore1_swcInternalBehavior</SD>
+                                    <SD GID="e2a15952-cd67-44aa-85ca-1e87f049ad01">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/Os_OsCore1_swcInternalBehavior/GetCounterValue</SD>
+                                    <SD GID="19ca5153-f947-44f5-a76b-e96ea970a21b">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/Os_OsCore1_swcInternalBehavior/GetElapsedValue</SD>
+                                    <SD GID="a7d746d3-f496-4a63-bee4-fc8560bf08f3">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/Os_OsCore1_swcInternalBehavior/OpEventGetCounterValue_GetCounterValue_OsService_SystemTimer_Core1</SD>
+                                    <SD GID="81c4265a-cc87-4bb9-a555-ab1cd8820c0b">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore1_swc/Os_OsCore1_swcInternalBehavior/OpEventGetElapsedValue_GetElapsedValue_OsService_SystemTimer_Core1</SD>
+                                    <SD GID="5ac59a7a-b9fb-42ce-8eeb-207de8b907dc">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore2_swc</SD>
+                                    <SD GID="91cc6c91-26e1-4388-84ed-437e6b1a2bf9">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore2_swc/OsService_SystemTimer_Core2</SD>
+                                    <SD GID="9f4378f1-bdbe-44eb-88b3-11508c4f8ae0">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore2_swc/Os_OsCore2_swcInternalBehavior</SD>
+                                    <SD GID="5e8a73e4-a1b7-4359-bf38-805789da999c">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore2_swc/Os_OsCore2_swcInternalBehavior/GetCounterValue</SD>
+                                    <SD GID="f94f8b32-4c17-4ff5-9bfd-8e9ffe252e66">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore2_swc/Os_OsCore2_swcInternalBehavior/GetElapsedValue</SD>
+                                    <SD GID="2e75e276-1dcc-41d5-9013-78f73f1312d4">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore2_swc/Os_OsCore2_swcInternalBehavior/OpEventGetCounterValue_GetCounterValue_OsService_SystemTimer_Core2</SD>
+                                    <SD GID="e3623566-75da-452e-9353-fa432cd69557">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore2_swc/Os_OsCore2_swcInternalBehavior/OpEventGetElapsedValue_GetElapsedValue_OsService_SystemTimer_Core2</SD>
+                                    <SD GID="796d3ddc-c235-4822-95a6-7ef78fe1299a">/MICROSAR/Os_swc/DataTypes/CounterType</SD>
+                                    <SD GID="c0626b12-7ea2-47b5-b0bb-ce9119047dee">/MICROSAR/Os_swc/DataTypes/DataConstrs/CounterType_Constr</SD>
+                                    <SD GID="b56374a8-0233-41a4-a752-06485d586495">/MICROSAR/Os_swc/DataTypes/DataConstrs/TimeInMicrosecondsType_Constr</SD>
+                                    <SD GID="6f6c2773-3518-4f71-b1df-729966f51857">/MICROSAR/Os_swc/DataTypes/TimeInMicrosecondsType</SD>
+                                    <SD GID="5022cd18-87c7-491f-9508-2ec79a869f4f">/MICROSAR/Os_swc/Interfaces/Os_Service</SD>
+                                    <SD GID="1d34edba-8f12-46e3-a829-ebac98358b6c">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OK</SD>
+                                    <SD GID="54595cf9-5801-4b8c-9b14-870fe09ce25a">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OS_ID</SD>
+                                    <SD GID="27af0ab7-6e9f-4791-9166-a53e3b1c293c">/MICROSAR/Os_swc/Interfaces/Os_Service/E_OS_VALUE</SD>
+                                    <SD GID="025e0bf9-c770-4a01-8b1c-e4b96d6a73d7">/MICROSAR/Os_swc/Interfaces/Os_Service/GetCounterValue</SD>
+                                    <SD GID="524ee239-3991-4ea3-a13c-6f1705c72fd7">/MICROSAR/Os_swc/Interfaces/Os_Service/GetElapsedValue</SD>
+                                    <SD GID="d14d124d-6b3f-4d5b-bcd8-0f50c4837dbb">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior</SD>
+                                    <SD GID="e84b90db-a401-4354-8137-b51b64d92671">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior/PDUR_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="29f67c70-ded0-4f84-8078-2d472e64068d">/MICROSAR/PduR_ib_bswmd/XcpEvents</SD>
+                                    <SD GID="a030fbfa-4dc1-4d4a-8e95-d1e138034e9a">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior</SD>
+                                    <SD GID="192beb57-7997-4ec2-bc55-4c405cfb6206">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior/Rte_ComSendSignalProxyPeriodic</SD>
+                                    <SD GID="c417382f-9ee3-4939-870a-8bf42429ef5f">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior/Rte_ComSendSignalProxyPeriodicTimingEvent0</SD>
+                                    <SD GID="06b9a47a-6081-4aa2-9ee9-21720da839ea">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte_ComSendSignalProxyPeriodic</SD>
+                                    <SD GID="4003AE9A-24A2-4166-B87E-343626A613EE">/PortInterfaces/lock_control</SD>
+                                    <SD GID="A40F6205-68C8-4FAF-8688-EAC557B3194E">/PortInterfaces/lock_control/lock_cmd</SD>
+                                    <SD GID="C77C9F97-F239-4947-8092-01431DDC4AFD">/PortInterfaces/lock_status/lock_status</SD>
+                                    <SD GID="07716F06-A673-430F-8DBC-37E3446C64CF">/PortInterfaces/outmode</SD>
+                                    <SD GID="1167F96A-6431-4A77-B4F2-4367CF3A526C">/PortInterfaces/outmode/mode</SD>
+                                    <SD GID="{AF35D1D4-4362-4055-B014-780FA6F9E75B}">/Predefined_DEV/CompuMethods/Dem_UdsStatusByteType</SD>
+                                    <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
+                                    <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>
+                                    <SD GID="B793537F-8111-42E8-BF52-B2FB0BC71BFB">/Predefined_DEV/DataConstraints/Dem_UdsStatusByteType</SD>
+                                  </SDG>
+                                </SDGS>
+                              </ADMIN-DATA>
+                            </AR-PACKAGE>
+                          </AR-PACKAGES>
+                        </AR-PACKAGE>
+                      </AR-PACKAGES>
+                    </AR-PACKAGE>
+                  </AR-PACKAGES>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

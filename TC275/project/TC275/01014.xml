@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stg format="2.0">
+	<Header type="key">
+		<Name type="string">UDE Starterkit</Name>
+		<Version type="string">5.00.03</Version>
+		<Date type="string">17.10.2024 14:15:11:000</Date>
+		<Comment type="string">Exported Watch View Content</Comment>
+		<Identifier type="string">ExportWatchContentStg</Identifier>
+	</Header>
+	<Watch_Export></Watch_Export>
+	<Exported_Member type="key">
+		<Name type="string">YES</Name>
+		<Address type="string">NO</Address>
+		<Value type="string">YES</Value>
+		<Value2 type="string">NO</Value2>
+		<Type type="string">NO</Type>
+		<Scope type="string">NO</Scope>
+		<SelectionsOnly type="string">NO</SelectionsOnly>
+	</Exported_Member>
+</stg>
