@@ -1,0 +1,3296 @@
+{
+  "$id": "1",
+  "Serializer": "Vector.DaVinci.MicrosarRteGenSerializer, Version=1.18.8.0, Culture=neutral, PublicKeyToken=9c29a3dacae88631",
+  "SerializerVersion": "1.18.8.0",
+  "GenerationParameters": {
+    "$id": "2",
+    "License": "No license found",
+    "LicenseKey": "",
+    "VerboseLevel": 1,
+    "ShortNamesRestricted": false,
+    "GenerationModes": [
+      "RTE_GEN"
+    ],
+    "FileName": "",
+    "WorkspacePath": "",
+    "GeneratorBasePath": "E:\\software\\Tricore_TC275_SIP\\Generators\\Rte\\",
+    "OutputDirectory": "C:\\Users\\ZhuanZ\\AppData\\Local\\Temp\\1728980094647-0\\"
+  },
+  "ECUName": "EcuInstance",
+  "EnableVFBTracing": false,
+  "ActivateMeasurement": false,
+  "UseXCPEvents": false,
+  "EnforceIOC": false,
+  "A2LVersion": 0,
+  "CalibrationSupport": 0,
+  "CalibrationBufferSize": 0,
+  "DataTypeTable": {
+    "$id": "3",
+    "AUTOSAR_Platform/ImplementationDataTypes/boolean": {
+      "$id": "4",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "1",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "boolean",
+      "Description": "boolean has the value space required to support the mathematical concept of \nbinary-valued logic: {true, false}.",
+      "DataTypeClass": 2,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 16
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/dtRef_const_VOID": {
+      "$id": "5",
+      "BaseType": "const void *",
+      "DataTypeName": "dtRef_const_VOID",
+      "Description": "",
+      "DataTypeClass": 16,
+      "DataLayerLinkList": [
+        null
+      ],
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": false,
+      "BaseTypeSize": 0,
+      "BaseTypeEncoding": 15
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/dtRef_VOID": {
+      "$id": "6",
+      "BaseType": "void *",
+      "DataTypeName": "dtRef_VOID",
+      "Description": "",
+      "DataTypeClass": 16,
+      "DataLayerLinkList": [
+        null
+      ],
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": false,
+      "BaseTypeSize": 0,
+      "BaseTypeEncoding": 15
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/float32": {
+      "$id": "7",
+      "Encoding": 0,
+      "AllowNaN": false,
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "-INF",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "INF",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "float32",
+      "Description": "float32 corresponds to the IEEE single-precision 32-bit floating point type\n[IEEE 754-1985]. The basic value space of float32 consists of the values \nm * 2^e, where m is an integer whose absolute value is less than 2^24, \nand e is an integer between -149 and 104, inclusive. In addition to the basic\nvalue space described above, the value space of float32 also contains the \nfollowing special values: positive and negative zero, positive and negative \ninfinity and not-a-number. The order-relation on float32 is: \nx < y if y - x is positive. Positive zero is greater than negative zero.\nNot-a-number equals itself and is greater than all float values including positive infinity. \n\nfloat32 values have a lexical representation consisting of a mantissa followed, \noptionally, by the character \"E\" or \"e\", followed by an exponent. The exponent\nmust be an integer. The mantissa must be a decimal number. The representations\nfor exponent and mantissa must follow the lexical rules for integer and decimal.\nIf the \"E\" or \"e\" and the following exponent are omitted, an exponent value \nof 0 is assumed. \n\nThe special values positive and negative zero, positive and negative infinity\nand not-a-number have lexical representations 0, -0, INF, -INF and NaN, \nrespectively. \n\nFor example, -1E4, 1267.43233E12, 12.78e-2, 12 and INF are all legal literals\nfor float32.",
+      "DataTypeClass": 1,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 32,
+      "BaseTypeEncoding": 8
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/float64": {
+      "$id": "8",
+      "Encoding": 1,
+      "AllowNaN": true,
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "-INF",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "INF",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "float64",
+      "Description": "The float64 datatype corresponds to IEEE float64-precision 64-bit floating point\ntype [IEEE 754-1985]. The basic value space of float64 consists of the values\nm * 2^e, where m is an integer whose absolute value is less than 2^53, and e is\n an integer between -1075 and 970, inclusive. In addition to the basic value \nspace described above, the value space of float64 also contains the following \nspecial values: positive and negative zero, positive and negative infinity \nand not-a-number. \nThe order-relation on float64 is: x < y if y - x is positive. \nPositive zero is greater than negative zero. Not-a-number equals itself and \nis greater than all float64 values including positive infinity. \n                    \nfloat64 values have a lexical representation consisting of a mantissa followed,\noptionally, by the character \"E\" or \"e\", followed by an exponent. \nThe exponent must be an integer. The mantissa must be a decimal number.\nThe representations for exponent and mantissa must follow the lexical rules \nfor integer and decimal. If the \"E\" or \"e\" and the following exponent are \nomitted, an exponent value of 0 is assumed. \n\nThe special values positive and negative zero, positive and negative infinity\nand not-a-number have lexical representations 0, -0, INF, -INF and NaN, \nrespectively. \n\nFor example, -1E4, 1267.43233E12, 12.78e-2, 12 and INF are all \nlegal literals for float64.",
+      "DataTypeClass": 1,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 64,
+      "BaseTypeEncoding": 8
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/sint16": {
+      "$id": "9",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "-32768",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "32767",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "sint16",
+      "Description": "SInt16 represents integers with a minimum value of -32768 and a maximum value \nof 32767. The order-relation on sint16 is: x < y if y - x is positive.\nsint16 has a lexical representation consisting of an optional sign followed\nby a finite-length sequence of decimal digits (#x30-#x39). If the sign is\nomitted, \"+\" is assumed. \n\nFor example: -1, 0, -12678, +10000, 2500",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 16,
+      "BaseTypeEncoding": 2
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/sint16_least": {
+      "$id": "10",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "-32768",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "32767",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "sint16_least",
+      "Description": "sint16_least represents a signed integer with values defined by at least 16 bit.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 64,
+      "BaseTypeEncoding": 2
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/sint32": {
+      "$id": "11",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "-2147483648",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "2147483647",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "sint32",
+      "Description": "sint32 represents integers with a minimum value of -2147483648 and a maximum \nvalue of 2147483647. The order-relation on sint32 is: x < y if y - x is\npositive. sint32 has a lexical representation consisting of an optional sign \nallowed by a finite-length sequence of decimal digits (#x30-#x39). If the \nsign is omitted, \"+\" is assumed. \n\nFor example: -1, 0, -12688778, +10000, 250098675.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 32,
+      "BaseTypeEncoding": 2
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/sint32_least": {
+      "$id": "12",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "-2147483648",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "2147483647",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "sint32_least",
+      "Description": "sint32_least represents a signed integer with values defined by at least 32 bit.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 64,
+      "BaseTypeEncoding": 2
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/sint64": {
+      "$id": "13",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "-9223372036854775808",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "9223372036854775807",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "sint64",
+      "Description": "sint64 represents integers with a minimum value of -9223372036854775808 and a maximum \nvalue of 9223372036854775807. The order-relation on sint64 is: x < y if y - x is\npositive. sint64 has a lexical representation consisting of an optional sign \nallowed by a finite-length sequence of decimal digits (#x30-#x39). If the \nsign is omitted, \"+\" is assumed. \n\nFor example: -1, 0, -12688778, +10000, 250098675.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 64,
+      "BaseTypeEncoding": 2
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/sint8": {
+      "$id": "14",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "-128",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "127",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "sint8",
+      "Description": "sint8 represents integers with a minimum value of -128 and a maximum value of 127.\nThe order-relation on sint8 is: x < y if y - x is positive.\nsint8 has a lexical representation consisting of an optional sign followed \nby a finite-length sequence of decimal digits (#x30-#x39). If the sign is \nomitted, \"+\" is assumed. \n\nFor example: -1, 0, 12678, +10000.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 2
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/sint8_least": {
+      "$id": "15",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "-128",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "127",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "sint8_least",
+      "Description": "sint8_least represents a signed integer with values defined by at least 8 bit.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 64,
+      "BaseTypeEncoding": 2
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/uint16": {
+      "$id": "16",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "65535",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "uint16",
+      "Description": "uint16 represents integers with a minimum value of 0 and a maximum value of 65535.\nThe order-relation on uint16 is: x < y if y - x is positive.\nuint16 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 1267, +10000.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "Det"
+      ],
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 16,
+      "BaseTypeEncoding": 14
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/uint16_least": {
+      "$id": "17",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "65535",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "uint16_least",
+      "Description": "uint16_least represents an unsigned integer with values defined by at least 16 bit.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 64,
+      "BaseTypeEncoding": 14
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/uint32": {
+      "$id": "18",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "4294967295",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "uint32",
+      "Description": "uint32 represents integers with a minimum value of 0 and a maximum value \nof 4294967295. The order-relation on uint32 is: x < y if y - x is positive.\nuint32 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39). \n\nFor example: 1, 0, 12234567, 104400.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "EcuM",
+        "Os_OsCore0_swc",
+        "Os_OsCore1_swc",
+        "Os_OsCore2_swc"
+      ],
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 32,
+      "BaseTypeEncoding": 14
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/uint32_least": {
+      "$id": "19",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "4294967295",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "uint32_least",
+      "Description": "uint32_least represents an unsigned integer with values defined by at least 32 bit.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 64,
+      "BaseTypeEncoding": 14
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/uint64": {
+      "$id": "20",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "18446744073709551615",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "uint64",
+      "Description": "uint64 represents integers with a minimum value of 0 and a maximum value \nof 18446744073709551615. The order-relation on uint64 is: x < y if y - x is positive.\nuint64 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39). \n\nFor example: 1, 0, 12234567, 104400.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 64,
+      "BaseTypeEncoding": 14
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/uint8": {
+      "$id": "21",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "uint8",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "BswM",
+        "Det",
+        "EcuM",
+        "Os_OsCore0_swc",
+        "Os_OsCore1_swc",
+        "Os_OsCore2_swc"
+      ],
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "AUTOSAR_Platform/ImplementationDataTypes/uint8_least": {
+      "$id": "22",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "uint8_least",
+      "Description": "uint8_least represents an unsigned integer with values defined by at least 8 bit.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "SkipGeneration": true,
+      "BaseTypeSize": 64,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/BswM_swc/DataTypes/BswM_ESH_Mode": {
+      "$id": "23",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "24",
+          "Value": "2",
+          "Name": "POSTRUN",
+          "OrderIndex": 2,
+          "UseRange": false,
+          "UpperLimit": "2",
+          "LowerLimit": "2",
+          "ShortLabel": "POSTRUN",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        },
+        {
+          "$id": "25",
+          "Value": "1",
+          "Name": "RUN",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "1",
+          "LowerLimit": "1",
+          "ShortLabel": "RUN",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        },
+        {
+          "$id": "26",
+          "Value": "4",
+          "Name": "SHUTDOWN",
+          "OrderIndex": 4,
+          "UseRange": false,
+          "UpperLimit": "4",
+          "LowerLimit": "4",
+          "ShortLabel": "SHUTDOWN",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        },
+        {
+          "$id": "27",
+          "Value": "0",
+          "Name": "STARTUP",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "0",
+          "LowerLimit": "0",
+          "ShortLabel": "STARTUP",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        },
+        {
+          "$id": "28",
+          "Value": "3",
+          "Name": "WAKEUP",
+          "OrderIndex": 3,
+          "UseRange": false,
+          "UpperLimit": "3",
+          "LowerLimit": "3",
+          "ShortLabel": "WAKEUP",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        }
+      ],
+      "DataTypeName": "BswM_ESH_Mode",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "BswM"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/BswM_swc/DataTypes/BswM_ESH_RunRequest": {
+      "$id": "29",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "30",
+          "Value": "0",
+          "Name": "RELEASED",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "0",
+          "LowerLimit": "0",
+          "ShortLabel": "RELEASED",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        },
+        {
+          "$id": "31",
+          "Value": "1",
+          "Name": "REQUESTED",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "1",
+          "LowerLimit": "1",
+          "ShortLabel": "REQUESTED",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        }
+      ],
+      "DataTypeName": "BswM_ESH_RunRequest",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "BswM"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/BswM_swc/DataTypes/BswM_ModeDecl_ComFault_State": {
+      "$id": "32",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "33",
+          "Value": "0",
+          "Name": "ComFaultPreCond_FAIL",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "0",
+          "LowerLimit": "0",
+          "ShortLabel": "ComFaultPreCond_FAIL",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        },
+        {
+          "$id": "34",
+          "Value": "1",
+          "Name": "ComFaultPreCond_PASS",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "1",
+          "LowerLimit": "1",
+          "ShortLabel": "ComFaultPreCond_PASS",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        }
+      ],
+      "DataTypeName": "BswM_ModeDecl_ComFault_State",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "BswM"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/BswM_swc/DataTypes/BswM_ModeDecl_ComFault_State_WithKL15": {
+      "$id": "35",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "36",
+          "Value": "0",
+          "Name": "ComFaultPreCondWithKL15_FAIL",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "0",
+          "LowerLimit": "0",
+          "ShortLabel": "ComFaultPreCondWithKL15_FAIL",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        },
+        {
+          "$id": "37",
+          "Value": "1",
+          "Name": "ComFaultPreCondWithKL15_PASS",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "1",
+          "LowerLimit": "1",
+          "ShortLabel": "ComFaultPreCondWithKL15_PASS",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "BswM"
+          ]
+        }
+      ],
+      "DataTypeName": "BswM_ModeDecl_ComFault_State_WithKL15",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "BswM"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/EcuM_swc/DataTypes/EcuM_BootTargetType": {
+      "$id": "38",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "2",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "39",
+          "Value": "0",
+          "Name": "ECUM_BOOT_TARGET_APP",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "0",
+          "LowerLimit": "0",
+          "ShortLabel": "ECUM_BOOT_TARGET_APP",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        },
+        {
+          "$id": "40",
+          "Value": "1",
+          "Name": "ECUM_BOOT_TARGET_OEM_BOOTLOADER",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "1",
+          "LowerLimit": "1",
+          "ShortLabel": "ECUM_BOOT_TARGET_OEM_BOOTLOADER",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        },
+        {
+          "$id": "41",
+          "Value": "2",
+          "Name": "ECUM_BOOT_TARGET_SYS_BOOTLOADER",
+          "OrderIndex": 2,
+          "UseRange": false,
+          "UpperLimit": "2",
+          "LowerLimit": "2",
+          "ShortLabel": "ECUM_BOOT_TARGET_SYS_BOOTLOADER",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        }
+      ],
+      "DataTypeName": "EcuM_BootTargetType",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "EcuM"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/EcuM_swc/DataTypes/EcuM_ModeType": {
+      "$id": "42",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "3",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "43",
+          "Value": "2",
+          "Name": "EcuMConf_EcuMResetMode_ECUM_RESET_IO",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "2",
+          "LowerLimit": "2",
+          "ShortLabel": "EcuMConf_EcuMResetMode_ECUM_RESET_IO",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        },
+        {
+          "$id": "44",
+          "Value": "0",
+          "Name": "EcuMConf_EcuMResetMode_ECUM_RESET_MCU",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "0",
+          "LowerLimit": "0",
+          "ShortLabel": "EcuMConf_EcuMResetMode_ECUM_RESET_MCU",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        },
+        {
+          "$id": "45",
+          "Value": "3",
+          "Name": "EcuMConf_EcuMResetMode_ECUM_RESET_WAKEUP",
+          "OrderIndex": 2,
+          "UseRange": false,
+          "UpperLimit": "3",
+          "LowerLimit": "3",
+          "ShortLabel": "EcuMConf_EcuMResetMode_ECUM_RESET_WAKEUP",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        },
+        {
+          "$id": "46",
+          "Value": "1",
+          "Name": "EcuMConf_EcuMResetMode_ECUM_RESET_WDG",
+          "OrderIndex": 3,
+          "UseRange": false,
+          "UpperLimit": "1",
+          "LowerLimit": "1",
+          "ShortLabel": "EcuMConf_EcuMResetMode_ECUM_RESET_WDG",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        }
+      ],
+      "DataTypeName": "EcuM_ModeType",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "EcuM"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/EcuM_swc/DataTypes/EcuM_ShutdownCauseType": {
+      "$id": "47",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "3",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "48",
+          "Value": "3",
+          "Name": "EcuMConf_EcuMShutdownCause_ECUM_CAUSE_DCM",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "3",
+          "LowerLimit": "3",
+          "ShortLabel": "EcuMConf_EcuMShutdownCause_ECUM_CAUSE_DCM",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        },
+        {
+          "$id": "49",
+          "Value": "1",
+          "Name": "EcuMConf_EcuMShutdownCause_ECUM_CAUSE_ECU_STATE",
+          "OrderIndex": 2,
+          "UseRange": false,
+          "UpperLimit": "1",
+          "LowerLimit": "1",
+          "ShortLabel": "EcuMConf_EcuMShutdownCause_ECUM_CAUSE_ECU_STATE",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        },
+        {
+          "$id": "50",
+          "Value": "0",
+          "Name": "EcuMConf_EcuMShutdownCause_ECUM_CAUSE_UNKNOWN",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "0",
+          "LowerLimit": "0",
+          "ShortLabel": "EcuMConf_EcuMShutdownCause_ECUM_CAUSE_UNKNOWN",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        },
+        {
+          "$id": "51",
+          "Value": "2",
+          "Name": "EcuMConf_EcuMShutdownCause_ECUM_CAUSE_WDGM",
+          "OrderIndex": 3,
+          "UseRange": false,
+          "UpperLimit": "2",
+          "LowerLimit": "2",
+          "ShortLabel": "EcuMConf_EcuMShutdownCause_ECUM_CAUSE_WDGM",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        }
+      ],
+      "DataTypeName": "EcuM_ShutdownCauseType",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "EcuM"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/EcuM_swc/DataTypes/EcuM_StateType": {
+      "$id": "52",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "144",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "53",
+          "Value": "128",
+          "Name": "ECUM_STATE_OFF",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "128",
+          "LowerLimit": "128",
+          "ShortLabel": "ECUM_STATE_OFF",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        },
+        {
+          "$id": "54",
+          "Value": "144",
+          "Name": "ECUM_STATE_RESET",
+          "OrderIndex": 2,
+          "UseRange": false,
+          "UpperLimit": "144",
+          "LowerLimit": "144",
+          "ShortLabel": "ECUM_STATE_RESET",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        },
+        {
+          "$id": "55",
+          "Value": "80",
+          "Name": "ECUM_STATE_SLEEP",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "80",
+          "LowerLimit": "80",
+          "ShortLabel": "ECUM_STATE_SLEEP",
+          "BitfieldMask": "",
+          "IsUsedByComponentNameList": [
+            "EcuM"
+          ]
+        }
+      ],
+      "DataTypeName": "EcuM_StateType",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "EcuM"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/EcuM_swc/DataTypes/EcuM_TimeType": {
+      "$id": "56",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "4294967295",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "EcuM_TimeType",
+      "Description": "uint32 represents integers with a minimum value of 0 and a maximum value \nof 4294967295. The order-relation on uint32 is: x < y if y - x is positive.\nuint32 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39). \n\nFor example: 1, 0, 12234567, 104400.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "EcuM"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint32",
+      "SkipGeneration": false,
+      "BaseTypeSize": 32,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/EcuM_swc/DataTypes/EcuM_UserType": {
+      "$id": "57",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "EcuM_UserType",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "EcuM"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/Os_swc/DataTypes/CounterType": {
+      "$id": "58",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "CounterType",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "Os_OsCore0_swc",
+        "Os_OsCore1_swc",
+        "Os_OsCore2_swc"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": true,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "MICROSAR/Os_swc/DataTypes/TimeInMicrosecondsType": {
+      "$id": "59",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "4294967295",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "DataTypeName": "TimeInMicrosecondsType",
+      "Description": "uint32 represents integers with a minimum value of 0 and a maximum value \nof 4294967295. The order-relation on uint32 is: x < y if y - x is positive.\nuint32 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39). \n\nFor example: 1, 0, 12234567, 104400.",
+      "DataTypeClass": 0,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "IsUsedByComponentNameList": [
+        "Os_OsCore0_swc",
+        "Os_OsCore1_swc",
+        "Os_OsCore2_swc"
+      ],
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint32",
+      "SkipGeneration": false,
+      "BaseTypeSize": 32,
+      "BaseTypeEncoding": 14
+    },
+    "Predefined_DEV/ImplementationDataTypes/Dem_UdsStatusByteType": {
+      "$id": "60",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "61",
+          "Value": "8",
+          "Name": "DEM_UDS_STATUS_CDTC",
+          "OrderIndex": 3,
+          "UseRange": false,
+          "UpperLimit": "8",
+          "LowerLimit": "8",
+          "ShortLabel": "DEM_UDS_STATUS_CDTC",
+          "BitfieldMask": "8"
+        },
+        {
+          "$id": "62",
+          "Value": "4",
+          "Name": "DEM_UDS_STATUS_PDTC",
+          "OrderIndex": 2,
+          "UseRange": false,
+          "UpperLimit": "4",
+          "LowerLimit": "4",
+          "ShortLabel": "DEM_UDS_STATUS_PDTC",
+          "BitfieldMask": "4"
+        },
+        {
+          "$id": "63",
+          "Value": "1",
+          "Name": "DEM_UDS_STATUS_TF",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "1",
+          "LowerLimit": "1",
+          "ShortLabel": "DEM_UDS_STATUS_TF",
+          "BitfieldMask": "1"
+        },
+        {
+          "$id": "64",
+          "Value": "32",
+          "Name": "DEM_UDS_STATUS_TFSLC",
+          "OrderIndex": 5,
+          "UseRange": false,
+          "UpperLimit": "32",
+          "LowerLimit": "32",
+          "ShortLabel": "DEM_UDS_STATUS_TFSLC",
+          "BitfieldMask": "32"
+        },
+        {
+          "$id": "65",
+          "Value": "2",
+          "Name": "DEM_UDS_STATUS_TFTOC",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "2",
+          "LowerLimit": "2",
+          "ShortLabel": "DEM_UDS_STATUS_TFTOC",
+          "BitfieldMask": "2"
+        },
+        {
+          "$id": "66",
+          "Value": "16",
+          "Name": "DEM_UDS_STATUS_TNCSLC",
+          "OrderIndex": 4,
+          "UseRange": false,
+          "UpperLimit": "16",
+          "LowerLimit": "16",
+          "ShortLabel": "DEM_UDS_STATUS_TNCSLC",
+          "BitfieldMask": "16"
+        },
+        {
+          "$id": "67",
+          "Value": "64",
+          "Name": "DEM_UDS_STATUS_TNCTOC",
+          "OrderIndex": 6,
+          "UseRange": false,
+          "UpperLimit": "64",
+          "LowerLimit": "64",
+          "ShortLabel": "DEM_UDS_STATUS_TNCTOC",
+          "BitfieldMask": "64"
+        },
+        {
+          "$id": "68",
+          "Value": "128",
+          "Name": "DEM_UDS_STATUS_WIR",
+          "OrderIndex": 7,
+          "UseRange": false,
+          "UpperLimit": "128",
+          "LowerLimit": "128",
+          "ShortLabel": "DEM_UDS_STATUS_WIR",
+          "BitfieldMask": "128"
+        }
+      ],
+      "DataTypeName": "Dem_UdsStatusByteType",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "Predefined_DEV/ImplementationDataTypes/NvM_RequestResultType": {
+      "$id": "69",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "70",
+          "Value": "4",
+          "Name": "NVM_REQ_BLOCK_SKIPPED",
+          "OrderIndex": 4,
+          "UseRange": false,
+          "UpperLimit": "4",
+          "LowerLimit": "4",
+          "ShortLabel": "NVM_REQ_BLOCK_SKIPPED",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "71",
+          "Value": "6",
+          "Name": "NVM_REQ_CANCELED",
+          "OrderIndex": 6,
+          "UseRange": false,
+          "UpperLimit": "6",
+          "LowerLimit": "6",
+          "ShortLabel": "NVM_REQ_CANCELED",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "72",
+          "Value": "3",
+          "Name": "NVM_REQ_INTEGRITY_FAILED",
+          "OrderIndex": 3,
+          "UseRange": false,
+          "UpperLimit": "3",
+          "LowerLimit": "3",
+          "ShortLabel": "NVM_REQ_INTEGRITY_FAILED",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "73",
+          "Value": "1",
+          "Name": "NVM_REQ_NOT_OK",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "1",
+          "LowerLimit": "1",
+          "ShortLabel": "NVM_REQ_NOT_OK",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "74",
+          "Value": "5",
+          "Name": "NVM_REQ_NV_INVALIDATED",
+          "OrderIndex": 5,
+          "UseRange": false,
+          "UpperLimit": "5",
+          "LowerLimit": "5",
+          "ShortLabel": "NVM_REQ_NV_INVALIDATED",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "75",
+          "Value": "0",
+          "Name": "NVM_REQ_OK",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "0",
+          "LowerLimit": "0",
+          "ShortLabel": "NVM_REQ_OK",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "76",
+          "Value": "2",
+          "Name": "NVM_REQ_PENDING",
+          "OrderIndex": 2,
+          "UseRange": false,
+          "UpperLimit": "2",
+          "LowerLimit": "2",
+          "ShortLabel": "NVM_REQ_PENDING",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "77",
+          "Value": "7",
+          "Name": "NVM_REQ_REDUNDANCY_FAILED",
+          "OrderIndex": 7,
+          "UseRange": false,
+          "UpperLimit": "7",
+          "LowerLimit": "7",
+          "ShortLabel": "NVM_REQ_REDUNDANCY_FAILED",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "78",
+          "Value": "8",
+          "Name": "NVM_REQ_RESTORED_FROM_ROM",
+          "OrderIndex": 8,
+          "UseRange": false,
+          "UpperLimit": "8",
+          "LowerLimit": "8",
+          "ShortLabel": "NVM_REQ_RESTORED_FROM_ROM",
+          "BitfieldMask": ""
+        }
+      ],
+      "DataTypeName": "NvM_RequestResultType",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    },
+    "Predefined_DEV/ImplementationDataTypes/NvM_ServiceIdType": {
+      "$id": "79",
+      "BaseType": "",
+      "LowerLimitSpecified": true,
+      "LowerLimit": "0",
+      "UpperLimitSpecified": true,
+      "UpperLimit": "255",
+      "UseScaling": false,
+      "Factor": 0.0,
+      "Offset": 0.0,
+      "UseScalingLimit": false,
+      "EnumerationRangeList": [
+        {
+          "$id": "80",
+          "Value": "9",
+          "Name": "NVM_ERASE_BLOCK",
+          "OrderIndex": 3,
+          "UseRange": false,
+          "UpperLimit": "9",
+          "LowerLimit": "9",
+          "ShortLabel": "NVM_ERASE_BLOCK",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "81",
+          "Value": "11",
+          "Name": "NVM_INVALIDATE_NV_BLOCK",
+          "OrderIndex": 4,
+          "UseRange": false,
+          "UpperLimit": "11",
+          "LowerLimit": "11",
+          "ShortLabel": "NVM_INVALIDATE_NV_BLOCK",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "82",
+          "Value": "12",
+          "Name": "NVM_READ_ALL",
+          "OrderIndex": 5,
+          "UseRange": false,
+          "UpperLimit": "12",
+          "LowerLimit": "12",
+          "ShortLabel": "NVM_READ_ALL",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "83",
+          "Value": "6",
+          "Name": "NVM_READ_BLOCK",
+          "OrderIndex": 0,
+          "UseRange": false,
+          "UpperLimit": "6",
+          "LowerLimit": "6",
+          "ShortLabel": "NVM_READ_BLOCK",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "84",
+          "Value": "8",
+          "Name": "NVM_RESTORE_BLOCK_DEFAULTS",
+          "OrderIndex": 2,
+          "UseRange": false,
+          "UpperLimit": "8",
+          "LowerLimit": "8",
+          "ShortLabel": "NVM_RESTORE_BLOCK_DEFAULTS",
+          "BitfieldMask": ""
+        },
+        {
+          "$id": "85",
+          "Value": "7",
+          "Name": "NVM_WRITE_BLOCK",
+          "OrderIndex": 1,
+          "UseRange": false,
+          "UpperLimit": "7",
+          "LowerLimit": "7",
+          "ShortLabel": "NVM_WRITE_BLOCK",
+          "BitfieldMask": ""
+        }
+      ],
+      "DataTypeName": "NvM_ServiceIdType",
+      "Description": "uint8 represents integers with a minimum value of 0 and a maximum value of 255.\nThe order-relation on uint8 is: x < y if y - x is positive.\nuint8 has a lexical representation consisting of a finite-length sequence \nof decimal digits (#x30-#x39).\n\nFor example: 1, 0, 126, +10.",
+      "DataTypeClass": 8,
+      "DataLayerLinkList": [
+        null
+      ],
+      "InvalidValue": "0",
+      "UseInvalidValue": false,
+      "IsStandardType": false,
+      "ReferencingConstantsList": [],
+      "RedefinedType": "AUTOSAR_Platform/ImplementationDataTypes/uint8",
+      "SkipGeneration": false,
+      "BaseTypeSize": 8,
+      "BaseTypeEncoding": 14
+    }
+  },
+  "ApplicationDataTypeTable": {
+    "$id": "86"
+  },
+  "ModeGroupTable": {
+    "$id": "87",
+    "MICROSAR/BswM_swc/ESH_Mode": {
+      "$id": "88",
+      "ModeGroupName": "ESH_Mode",
+      "Description": "",
+      "InitialModeName": "STARTUP",
+      "OnTransitionValue": "",
+      "OrderCategory": 0,
+      "ModeTable": {
+        "$id": "89",
+        "POSTRUN": {
+          "$id": "90",
+          "ModeName": "POSTRUN",
+          "Description": "",
+          "Value": ""
+        },
+        "RUN": {
+          "$id": "91",
+          "ModeName": "RUN",
+          "Description": "",
+          "Value": ""
+        },
+        "SHUTDOWN": {
+          "$id": "92",
+          "ModeName": "SHUTDOWN",
+          "Description": "",
+          "Value": ""
+        },
+        "STARTUP": {
+          "$id": "93",
+          "ModeName": "STARTUP",
+          "Description": "",
+          "Value": ""
+        },
+        "WAKEUP": {
+          "$id": "94",
+          "ModeName": "WAKEUP",
+          "Description": "",
+          "Value": ""
+        }
+      },
+      "DataTypeMappingTable": {
+        "$id": "95",
+        "BswM": {
+          "$id": "96",
+          "DataTypeRef": {
+            "$ref": "23"
+          }
+        }
+      },
+      "IsUsedByComponentNameList": [
+        "BswM"
+      ]
+    },
+    "MICROSAR/BswM_swc/ESH_RunRequest": {
+      "$id": "97",
+      "ModeGroupName": "ESH_RunRequest",
+      "Description": "",
+      "InitialModeName": "RELEASED",
+      "OnTransitionValue": "",
+      "OrderCategory": 0,
+      "ModeTable": {
+        "$id": "98",
+        "RELEASED": {
+          "$id": "99",
+          "ModeName": "RELEASED",
+          "Description": "",
+          "Value": ""
+        },
+        "REQUESTED": {
+          "$id": "100",
+          "ModeName": "REQUESTED",
+          "Description": "",
+          "Value": ""
+        }
+      },
+      "DataTypeMappingTable": {
+        "$id": "101",
+        "BswM": {
+          "$id": "102",
+          "DataTypeRef": {
+            "$ref": "29"
+          }
+        }
+      },
+      "IsUsedByComponentNameList": [
+        "BswM"
+      ]
+    },
+    "MICROSAR/BswM_swc/ModeDecl_ComFault_State": {
+      "$id": "103",
+      "ModeGroupName": "ModeDecl_ComFault_State",
+      "Description": "",
+      "InitialModeName": "ComFaultPreCond_FAIL",
+      "OnTransitionValue": "",
+      "OrderCategory": 0,
+      "ModeTable": {
+        "$id": "104",
+        "ComFaultPreCond_FAIL": {
+          "$id": "105",
+          "ModeName": "ComFaultPreCond_FAIL",
+          "Description": "",
+          "Value": ""
+        },
+        "ComFaultPreCond_PASS": {
+          "$id": "106",
+          "ModeName": "ComFaultPreCond_PASS",
+          "Description": "",
+          "Value": ""
+        }
+      },
+      "DataTypeMappingTable": {
+        "$id": "107",
+        "BswM": {
+          "$id": "108",
+          "DataTypeRef": {
+            "$ref": "32"
+          }
+        }
+      },
+      "IsUsedByComponentNameList": [
+        "BswM"
+      ]
+    },
+    "MICROSAR/BswM_swc/ModeDecl_ComFault_State_WithKL15": {
+      "$id": "109",
+      "ModeGroupName": "ModeDecl_ComFault_State_WithKL15",
+      "Description": "",
+      "InitialModeName": "ComFaultPreCondWithKL15_FAIL",
+      "OnTransitionValue": "",
+      "OrderCategory": 0,
+      "ModeTable": {
+        "$id": "110",
+        "ComFaultPreCondWithKL15_FAIL": {
+          "$id": "111",
+          "ModeName": "ComFaultPreCondWithKL15_FAIL",
+          "Description": "",
+          "Value": ""
+        },
+        "ComFaultPreCondWithKL15_PASS": {
+          "$id": "112",
+          "ModeName": "ComFaultPreCondWithKL15_PASS",
+          "Description": "",
+          "Value": ""
+        }
+      },
+      "DataTypeMappingTable": {
+        "$id": "113",
+        "BswM": {
+          "$id": "114",
+          "DataTypeRef": {
+            "$ref": "35"
+          }
+        }
+      },
+      "IsUsedByComponentNameList": [
+        "BswM"
+      ]
+    }
+  },
+  "Components": [
+    {
+      "$id": "115",
+      "ComponentInstanceName": "BswM",
+      "ComponentType": {
+        "$id": "116",
+        "ComponentTypeName": "BswM",
+        "RealizationType": 4,
+        "SupportsMultipleInstances": false,
+        "Description": "",
+        "ImplementationCodeType": 0,
+        "DataLayerLinkList": [
+          null
+        ],
+        "Type": 12,
+        "PerInstanceMemories": [],
+        "Runnables": [
+          {
+            "$id": "117",
+            "RunnableName": "BswM_MainFunction",
+            "Description": "",
+            "Symbol": "BswM_MainFunction",
+            "Reentrant": false,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "118",
+                "CycleTime": 5,
+                "CycleTimeUnit": 1,
+                "CyclicTriggerOffset": 0,
+                "CyclicTriggerOffsetUnit": 0,
+                "CyclicTriggerImplementation": 0,
+                "TriggerType": "TimingEvent",
+                "RTEEventList": [
+                  "Timer_BswM_MainFunction"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          }
+        ],
+        "CalibrationParameters": [],
+        "CalibrationPorts": [],
+        "NvMBlockNeedServiceDependencies": [],
+        "ExclusiveAreas": []
+      },
+      "CTCalibrationSupport": false,
+      "OperationPorts": [],
+      "ModePorts": [],
+      "SignalPorts": [],
+      "CalibrationPorts": [],
+      "TriggerPorts": []
+    },
+    {
+      "$id": "119",
+      "ComponentInstanceName": "Det",
+      "ComponentType": {
+        "$id": "120",
+        "ComponentTypeName": "Det",
+        "RealizationType": 4,
+        "SupportsMultipleInstances": false,
+        "Description": "",
+        "ImplementationCodeType": 0,
+        "DataLayerLinkList": [
+          null
+        ],
+        "Type": 12,
+        "PerInstanceMemories": [],
+        "Runnables": [
+          {
+            "$id": "121",
+            "RunnableName": "ReportError",
+            "Description": "",
+            "Symbol": "Det_ReportError",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "122",
+                "PortOperationRef": {
+                  "$id": "123",
+                  "PortPrototypeName": "DetModule",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "DETServiceLegacy",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "ReportError",
+                  "Description": "",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [
+                    {
+                      "$id": "124",
+                      "ID": "DetModule_0",
+                      "Value": "4096",
+                      "DataTypeRef": {
+                        "$ref": "16"
+                      }
+                    }
+                  ],
+                  "AppErrorList": [
+                    {
+                      "$id": "125",
+                      "ErrorName": "E_OK",
+                      "ErrorCode": 0
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "126",
+                      "ArgumentName": "InstanceId",
+                      "Direction": 0,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "21"
+                      }
+                    },
+                    {
+                      "$id": "127",
+                      "ArgumentName": "ApiId",
+                      "Direction": 0,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "21"
+                      }
+                    },
+                    {
+                      "$id": "128",
+                      "ArgumentName": "ErrorId",
+                      "Direction": 0,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "21"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventReportError_ReportError_DetModule"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          }
+        ],
+        "CalibrationParameters": [],
+        "CalibrationPorts": [],
+        "NvMBlockNeedServiceDependencies": [],
+        "ExclusiveAreas": []
+      },
+      "CTCalibrationSupport": false,
+      "OperationPorts": [
+        {
+          "$id": "129",
+          "PortPrototypeName": "DetModule",
+          "OperationPrototypeName": "ReportError",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        }
+      ],
+      "ModePorts": [],
+      "SignalPorts": [],
+      "CalibrationPorts": [],
+      "TriggerPorts": []
+    },
+    {
+      "$id": "130",
+      "ComponentInstanceName": "EcuM",
+      "ComponentType": {
+        "$id": "131",
+        "ComponentTypeName": "EcuM",
+        "RealizationType": 4,
+        "SupportsMultipleInstances": false,
+        "Description": "",
+        "ImplementationCodeType": 0,
+        "DataLayerLinkList": [
+          null
+        ],
+        "Type": 12,
+        "PerInstanceMemories": [],
+        "Runnables": [
+          {
+            "$id": "132",
+            "RunnableName": "EcuM_MainFunction",
+            "Description": "",
+            "Symbol": "EcuM_MainFunction",
+            "Reentrant": false,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "133",
+                "CycleTime": 5,
+                "CycleTimeUnit": 1,
+                "CyclicTriggerOffset": 0,
+                "CyclicTriggerOffsetUnit": 0,
+                "CyclicTriggerImplementation": 0,
+                "TriggerType": "TimingEvent",
+                "RTEEventList": [
+                  "Timer_EcuM_MainFunction"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          },
+          {
+            "$id": "134",
+            "RunnableName": "GetBootTarget",
+            "Description": "",
+            "Symbol": "EcuM_GetBootTarget",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "135",
+                "PortOperationRef": {
+                  "$id": "136",
+                  "PortPrototypeName": "EcuM_BootTarget",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "EcuM_BootTarget",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "GetBootTarget",
+                  "Description": "Returns the current boot target.",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [],
+                  "AppErrorList": [
+                    {
+                      "$id": "137",
+                      "ErrorName": "E_NOT_OK",
+                      "ErrorCode": 1
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "138",
+                      "ArgumentName": "BootTarget",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "38"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventGetBootTarget_GetBootTarget_EcuM_BootTarget"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          },
+          {
+            "$id": "139",
+            "RunnableName": "GetLastShutdownTarget",
+            "Description": "",
+            "Symbol": "EcuM_GetLastShutdownTarget",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "140",
+                "PortOperationRef": {
+                  "$id": "141",
+                  "PortPrototypeName": "EcuM_ShutdownTarget",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "EcuM_ShutdownTarget",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "GetLastShutdownTarget",
+                  "Description": "Returns the shutdown target of the previous shutdown.",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [],
+                  "AppErrorList": [
+                    {
+                      "$id": "142",
+                      "ErrorName": "E_NOT_OK",
+                      "ErrorCode": 1
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "143",
+                      "ArgumentName": "target",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "52"
+                      }
+                    },
+                    {
+                      "$id": "144",
+                      "ArgumentName": "resetSleepMode",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "42"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventGetLastShutdownTarget_GetLastShutdownTarget_EcuM_ShutdownTarget"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          },
+          {
+            "$id": "145",
+            "RunnableName": "GetShutdownCause",
+            "Description": "",
+            "Symbol": "EcuM_GetShutdownCause",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "146",
+                "PortOperationRef": {
+                  "$id": "147",
+                  "PortPrototypeName": "EcuM_ShutdownTarget",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "EcuM_ShutdownTarget",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "GetShutdownCause",
+                  "Description": "Returns the selected shutdown cause as set by the operation SelectShutdownCause.",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [],
+                  "AppErrorList": [
+                    {
+                      "$id": "148",
+                      "ErrorName": "E_NOT_OK",
+                      "ErrorCode": 1
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "149",
+                      "ArgumentName": "shutdownCause",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "47"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventGetShutdownCause_GetShutdownCause_EcuM_ShutdownTarget"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          },
+          {
+            "$id": "150",
+            "RunnableName": "GetShutdownTarget",
+            "Description": "",
+            "Symbol": "EcuM_GetShutdownTarget",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "151",
+                "PortOperationRef": {
+                  "$id": "152",
+                  "PortPrototypeName": "EcuM_ShutdownTarget",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "EcuM_ShutdownTarget",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "GetShutdownTarget",
+                  "Description": "Returns the currently selected shutdown target for the next shutdown as set by the operation SelectShutdownTarget.",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [],
+                  "AppErrorList": [
+                    {
+                      "$id": "153",
+                      "ErrorName": "E_NOT_OK",
+                      "ErrorCode": 1
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "154",
+                      "ArgumentName": "target",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "52"
+                      }
+                    },
+                    {
+                      "$id": "155",
+                      "ArgumentName": "resetSleepMode",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "42"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventGetShutdownTarget_GetShutdownTarget_EcuM_ShutdownTarget"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          },
+          {
+            "$id": "156",
+            "RunnableName": "SelectBootTarget",
+            "Description": "",
+            "Symbol": "EcuM_SelectBootTarget",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "157",
+                "PortOperationRef": {
+                  "$id": "158",
+                  "PortPrototypeName": "EcuM_BootTarget",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "EcuM_BootTarget",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "SelectBootTarget",
+                  "Description": "The SW-C selects a boot target.",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [],
+                  "AppErrorList": [
+                    {
+                      "$id": "159",
+                      "ErrorName": "E_NOT_OK",
+                      "ErrorCode": 1
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "160",
+                      "ArgumentName": "BootTarget",
+                      "Direction": 0,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "38"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventSelectBootTarget_SelectBootTarget_EcuM_BootTarget"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          },
+          {
+            "$id": "161",
+            "RunnableName": "SelectShutdownCause",
+            "Description": "",
+            "Symbol": "EcuM_SelectShutdownCause",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "162",
+                "PortOperationRef": {
+                  "$id": "163",
+                  "PortPrototypeName": "EcuM_ShutdownTarget",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "EcuM_ShutdownTarget",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "SelectShutdownCause",
+                  "Description": "The SW-C selects the cause corresponding to the next shutdown target.",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [],
+                  "AppErrorList": [
+                    {
+                      "$id": "164",
+                      "ErrorName": "E_NOT_OK",
+                      "ErrorCode": 1
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "165",
+                      "ArgumentName": "shutdownCause",
+                      "Direction": 0,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "47"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventSelectShutdownCause_SelectShutdownCause_EcuM_ShutdownTarget"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          },
+          {
+            "$id": "166",
+            "RunnableName": "SelectShutdownTarget",
+            "Description": "",
+            "Symbol": "EcuM_SelectShutdownTarget",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "167",
+                "PortOperationRef": {
+                  "$id": "168",
+                  "PortPrototypeName": "EcuM_ShutdownTarget",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "EcuM_ShutdownTarget",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "SelectShutdownTarget",
+                  "Description": "The SW-C selects the cause corresponding to the next shutdown target.",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [],
+                  "AppErrorList": [
+                    {
+                      "$id": "169",
+                      "ErrorName": "E_NOT_OK",
+                      "ErrorCode": 1
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "170",
+                      "ArgumentName": "targetState",
+                      "Direction": 0,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "52"
+                      }
+                    },
+                    {
+                      "$id": "171",
+                      "ArgumentName": "resetSleepMode",
+                      "Direction": 0,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "42"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventSelectShutdownTarget_SelectShutdownTarget_EcuM_ShutdownTarget"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          }
+        ],
+        "CalibrationParameters": [],
+        "CalibrationPorts": [],
+        "NvMBlockNeedServiceDependencies": [],
+        "ExclusiveAreas": []
+      },
+      "CTCalibrationSupport": false,
+      "OperationPorts": [
+        {
+          "$id": "172",
+          "PortPrototypeName": "EcuM_ShutdownTarget",
+          "OperationPrototypeName": "SelectShutdownTarget",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        },
+        {
+          "$id": "173",
+          "PortPrototypeName": "EcuM_ShutdownTarget",
+          "OperationPrototypeName": "SelectShutdownCause",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        },
+        {
+          "$id": "174",
+          "PortPrototypeName": "EcuM_ShutdownTarget",
+          "OperationPrototypeName": "GetShutdownTarget",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        },
+        {
+          "$id": "175",
+          "PortPrototypeName": "EcuM_ShutdownTarget",
+          "OperationPrototypeName": "GetShutdownCause",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        },
+        {
+          "$id": "176",
+          "PortPrototypeName": "EcuM_ShutdownTarget",
+          "OperationPrototypeName": "GetLastShutdownTarget",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        },
+        {
+          "$id": "177",
+          "PortPrototypeName": "EcuM_BootTarget",
+          "OperationPrototypeName": "SelectBootTarget",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        },
+        {
+          "$id": "178",
+          "PortPrototypeName": "EcuM_BootTarget",
+          "OperationPrototypeName": "GetBootTarget",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        }
+      ],
+      "ModePorts": [],
+      "SignalPorts": [],
+      "CalibrationPorts": [],
+      "TriggerPorts": []
+    },
+    {
+      "$id": "179",
+      "ComponentInstanceName": "Os_OsCore0_swc",
+      "ComponentType": {
+        "$id": "180",
+        "ComponentTypeName": "Os_OsCore0_swc",
+        "RealizationType": 4,
+        "SupportsMultipleInstances": false,
+        "Description": "",
+        "ImplementationCodeType": 0,
+        "DataLayerLinkList": [
+          null
+        ],
+        "Type": 12,
+        "PerInstanceMemories": [],
+        "Runnables": [
+          {
+            "$id": "181",
+            "RunnableName": "GetCounterValue",
+            "Description": "",
+            "Symbol": "GetCounterValue",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "182",
+                "PortOperationRef": {
+                  "$id": "183",
+                  "PortPrototypeName": "OsService_SystemTimer_Core0",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "Os_Service",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "GetCounterValue",
+                  "Description": "This service reads the current count value of a counter (returning either the hardware timer ticks if counter is driven by hardware or the software ticks when user drives counter).",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [
+                    {
+                      "$id": "184",
+                      "ID": "OsService_SystemTimer_Core0_0",
+                      "Value": "SystemTimer_Core0",
+                      "DataTypeRef": {
+                        "$ref": "58"
+                      }
+                    }
+                  ],
+                  "AppErrorList": [
+                    {
+                      "$id": "185",
+                      "ErrorName": "E_OK",
+                      "ErrorCode": 0
+                    },
+                    {
+                      "$id": "186",
+                      "ErrorName": "E_OS_ID",
+                      "ErrorCode": 3
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "187",
+                      "ArgumentName": "Value",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "59"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventGetCounterValue_GetCounterValue_OsService_SystemTimer_Core0"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          },
+          {
+            "$id": "188",
+            "RunnableName": "GetElapsedValue",
+            "Description": "",
+            "Symbol": "GetElapsedValue",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "189",
+                "PortOperationRef": {
+                  "$id": "190",
+                  "PortPrototypeName": "OsService_SystemTimer_Core0",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "Os_Service",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "GetElapsedValue",
+                  "Description": "This service gets the number of ticks between the current tick value and a previously read tick value.",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [
+                    {
+                      "$id": "191",
+                      "ID": "OsService_SystemTimer_Core0_0",
+                      "Value": "SystemTimer_Core0",
+                      "DataTypeRef": {
+                        "$ref": "58"
+                      }
+                    }
+                  ],
+                  "AppErrorList": [
+                    {
+                      "$id": "192",
+                      "ErrorName": "E_OK",
+                      "ErrorCode": 0
+                    },
+                    {
+                      "$id": "193",
+                      "ErrorName": "E_OS_ID",
+                      "ErrorCode": 3
+                    },
+                    {
+                      "$id": "194",
+                      "ErrorName": "E_OS_VALUE",
+                      "ErrorCode": 8
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "195",
+                      "ArgumentName": "Value",
+                      "Direction": 1,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "59"
+                      }
+                    },
+                    {
+                      "$id": "196",
+                      "ArgumentName": "ElapsedValue",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "59"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventGetElapsedValue_GetElapsedValue_OsService_SystemTimer_Core0"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          }
+        ],
+        "CalibrationParameters": [],
+        "CalibrationPorts": [],
+        "NvMBlockNeedServiceDependencies": [],
+        "ExclusiveAreas": []
+      },
+      "CTCalibrationSupport": false,
+      "OperationPorts": [
+        {
+          "$id": "197",
+          "PortPrototypeName": "OsService_SystemTimer_Core0",
+          "OperationPrototypeName": "GetElapsedValue",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        },
+        {
+          "$id": "198",
+          "PortPrototypeName": "OsService_SystemTimer_Core0",
+          "OperationPrototypeName": "GetCounterValue",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        }
+      ],
+      "ModePorts": [],
+      "SignalPorts": [],
+      "CalibrationPorts": [],
+      "TriggerPorts": []
+    },
+    {
+      "$id": "199",
+      "ComponentInstanceName": "Os_OsCore1_swc",
+      "ComponentType": {
+        "$id": "200",
+        "ComponentTypeName": "Os_OsCore1_swc",
+        "RealizationType": 4,
+        "SupportsMultipleInstances": false,
+        "Description": "",
+        "ImplementationCodeType": 0,
+        "DataLayerLinkList": [
+          null
+        ],
+        "Type": 12,
+        "PerInstanceMemories": [],
+        "Runnables": [
+          {
+            "$id": "201",
+            "RunnableName": "GetCounterValue",
+            "Description": "",
+            "Symbol": "GetCounterValue",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "202",
+                "PortOperationRef": {
+                  "$id": "203",
+                  "PortPrototypeName": "OsService_SystemTimer_Core1",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "Os_Service",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "GetCounterValue",
+                  "Description": "This service reads the current count value of a counter (returning either the hardware timer ticks if counter is driven by hardware or the software ticks when user drives counter).",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [
+                    {
+                      "$id": "204",
+                      "ID": "OsService_SystemTimer_Core1_0",
+                      "Value": "SystemTimer_Core1",
+                      "DataTypeRef": {
+                        "$ref": "58"
+                      }
+                    }
+                  ],
+                  "AppErrorList": [
+                    {
+                      "$id": "205",
+                      "ErrorName": "E_OK",
+                      "ErrorCode": 0
+                    },
+                    {
+                      "$id": "206",
+                      "ErrorName": "E_OS_ID",
+                      "ErrorCode": 3
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "207",
+                      "ArgumentName": "Value",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "59"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventGetCounterValue_GetCounterValue_OsService_SystemTimer_Core1"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          },
+          {
+            "$id": "208",
+            "RunnableName": "GetElapsedValue",
+            "Description": "",
+            "Symbol": "GetElapsedValue",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "209",
+                "PortOperationRef": {
+                  "$id": "210",
+                  "PortPrototypeName": "OsService_SystemTimer_Core1",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "Os_Service",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "GetElapsedValue",
+                  "Description": "This service gets the number of ticks between the current tick value and a previously read tick value.",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [
+                    {
+                      "$id": "211",
+                      "ID": "OsService_SystemTimer_Core1_0",
+                      "Value": "SystemTimer_Core1",
+                      "DataTypeRef": {
+                        "$ref": "58"
+                      }
+                    }
+                  ],
+                  "AppErrorList": [
+                    {
+                      "$id": "212",
+                      "ErrorName": "E_OK",
+                      "ErrorCode": 0
+                    },
+                    {
+                      "$id": "213",
+                      "ErrorName": "E_OS_ID",
+                      "ErrorCode": 3
+                    },
+                    {
+                      "$id": "214",
+                      "ErrorName": "E_OS_VALUE",
+                      "ErrorCode": 8
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "215",
+                      "ArgumentName": "Value",
+                      "Direction": 1,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "59"
+                      }
+                    },
+                    {
+                      "$id": "216",
+                      "ArgumentName": "ElapsedValue",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "59"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventGetElapsedValue_GetElapsedValue_OsService_SystemTimer_Core1"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          }
+        ],
+        "CalibrationParameters": [],
+        "CalibrationPorts": [],
+        "NvMBlockNeedServiceDependencies": [],
+        "ExclusiveAreas": []
+      },
+      "CTCalibrationSupport": false,
+      "OperationPorts": [
+        {
+          "$id": "217",
+          "PortPrototypeName": "OsService_SystemTimer_Core1",
+          "OperationPrototypeName": "GetElapsedValue",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        },
+        {
+          "$id": "218",
+          "PortPrototypeName": "OsService_SystemTimer_Core1",
+          "OperationPrototypeName": "GetCounterValue",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        }
+      ],
+      "ModePorts": [],
+      "SignalPorts": [],
+      "CalibrationPorts": [],
+      "TriggerPorts": []
+    },
+    {
+      "$id": "219",
+      "ComponentInstanceName": "Os_OsCore2_swc",
+      "ComponentType": {
+        "$id": "220",
+        "ComponentTypeName": "Os_OsCore2_swc",
+        "RealizationType": 4,
+        "SupportsMultipleInstances": false,
+        "Description": "",
+        "ImplementationCodeType": 0,
+        "DataLayerLinkList": [
+          null
+        ],
+        "Type": 12,
+        "PerInstanceMemories": [],
+        "Runnables": [
+          {
+            "$id": "221",
+            "RunnableName": "GetCounterValue",
+            "Description": "",
+            "Symbol": "GetCounterValue",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "222",
+                "PortOperationRef": {
+                  "$id": "223",
+                  "PortPrototypeName": "OsService_SystemTimer_Core2",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "Os_Service",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "GetCounterValue",
+                  "Description": "This service reads the current count value of a counter (returning either the hardware timer ticks if counter is driven by hardware or the software ticks when user drives counter).",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [
+                    {
+                      "$id": "224",
+                      "ID": "OsService_SystemTimer_Core2_0",
+                      "Value": "SystemTimer_Core2",
+                      "DataTypeRef": {
+                        "$ref": "58"
+                      }
+                    }
+                  ],
+                  "AppErrorList": [
+                    {
+                      "$id": "225",
+                      "ErrorName": "E_OK",
+                      "ErrorCode": 0
+                    },
+                    {
+                      "$id": "226",
+                      "ErrorName": "E_OS_ID",
+                      "ErrorCode": 3
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "227",
+                      "ArgumentName": "Value",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "59"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventGetCounterValue_GetCounterValue_OsService_SystemTimer_Core2"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          },
+          {
+            "$id": "228",
+            "RunnableName": "GetElapsedValue",
+            "Description": "",
+            "Symbol": "GetElapsedValue",
+            "Reentrant": true,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "229",
+                "PortOperationRef": {
+                  "$id": "230",
+                  "PortPrototypeName": "OsService_SystemTimer_Core2",
+                  "PortPrototypeDescription": "",
+                  "PortInterfaceName": "Os_Service",
+                  "IsService": true,
+                  "UseIndirectAPI": false,
+                  "EnableTakeAddress": true,
+                  "OperationPrototypeName": "GetElapsedValue",
+                  "Description": "This service gets the number of ticks between the current tick value and a previously read tick value.",
+                  "ErrorHandling": 0,
+                  "PortDefinedArgumentList": [
+                    {
+                      "$id": "231",
+                      "ID": "OsService_SystemTimer_Core2_0",
+                      "Value": "SystemTimer_Core2",
+                      "DataTypeRef": {
+                        "$ref": "58"
+                      }
+                    }
+                  ],
+                  "AppErrorList": [
+                    {
+                      "$id": "232",
+                      "ErrorName": "E_OK",
+                      "ErrorCode": 0
+                    },
+                    {
+                      "$id": "233",
+                      "ErrorName": "E_OS_ID",
+                      "ErrorCode": 3
+                    },
+                    {
+                      "$id": "234",
+                      "ErrorName": "E_OS_VALUE",
+                      "ErrorCode": 8
+                    }
+                  ],
+                  "ArgumentList": [
+                    {
+                      "$id": "235",
+                      "ArgumentName": "Value",
+                      "Direction": 1,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "59"
+                      }
+                    },
+                    {
+                      "$id": "236",
+                      "ArgumentName": "ElapsedValue",
+                      "Direction": 2,
+                      "ServerArgumentImplPolicy": 0,
+                      "DataTypeRef": {
+                        "$ref": "59"
+                      }
+                    }
+                  ],
+                  "DataLayerLinkList": [
+                    null,
+                    null
+                  ],
+                  "ServerCallPointList": [],
+                  "ServerReturnPointList": []
+                },
+                "TriggerType": "OperationInvokedEvent",
+                "RTEEventList": [
+                  "OpEventGetElapsedValue_GetElapsedValue_OsService_SystemTimer_Core2"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": [],
+            "InternalTriggeringPointList": []
+          }
+        ],
+        "CalibrationParameters": [],
+        "CalibrationPorts": [],
+        "NvMBlockNeedServiceDependencies": [],
+        "ExclusiveAreas": []
+      },
+      "CTCalibrationSupport": false,
+      "OperationPorts": [
+        {
+          "$id": "237",
+          "PortPrototypeName": "OsService_SystemTimer_Core2",
+          "OperationPrototypeName": "GetElapsedValue",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        },
+        {
+          "$id": "238",
+          "PortPrototypeName": "OsService_SystemTimer_Core2",
+          "OperationPrototypeName": "GetCounterValue",
+          "ClientPortCount": 0,
+          "QueueLength": 1,
+          "IsClient": false
+        }
+      ],
+      "ModePorts": [],
+      "SignalPorts": [],
+      "CalibrationPorts": [],
+      "TriggerPorts": []
+    }
+  ],
+  "LdComPduTable": {
+    "$id": "239"
+  },
+  "IsAUTOSAR3Rte": false,
+  "Type": 8,
+  "DataLayerLinkList": [
+    null
+  ]
+}
